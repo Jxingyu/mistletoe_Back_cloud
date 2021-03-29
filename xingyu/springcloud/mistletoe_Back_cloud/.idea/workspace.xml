@@ -1,179 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../RBAC前端梁冬/donleo-stmg-front-09-master/stmg-front-09/stmg-front-09.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../RBAC潘灿/.idea/RBAC潘灿.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../SSM/fzdz-SSM-back-8.1/fzdz-8.1-back-ssm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../SSM/fzdz-web-8.0/.idea/fzdz-web-8.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../SSM/jxingyu00-fzdz-web-8.0-master/.idea/jxingyu00-fzdz-web-8.0-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../rbac_web-潘产/rbac_static_web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../stmg-back-10/.idea/stmg-back-10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/studentcloud蒋鑫.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/studentcloud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/cloud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/common/src/main/java/com/cn/model/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/common/src/main/java/com/cn/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/eureka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/eureka/src/main/java/com/xy/permission/controller/EurekaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/eureka/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/ribbon-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/ribbon-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/user/src/main/java/com/xy/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cloud/user/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/IErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka/eureka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/com/xy/EurekaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mistletoe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/permission.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/controller/PermissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/colorpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/layedit-原版.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/layui.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/ace/ace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/ace/mode-html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/ace/snippets/html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/ace/theme-tomorrow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Content/ace/worker-html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dist/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../index.html" beforeDir="false" />
+    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="搭建ing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,18 +96,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617009484716</updated>
-      <workItem from="1617009487047" duration="5092000" />
+      <workItem from="1617009487047" duration="5672000" />
     </task>
+    <task id="LOCAL-00001" summary="搭建ing">
+      <created>1617014938412</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617014938412</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="搭建ing" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建ing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1617010596639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1617010596639" />
+    <state x="525" y="88" key="CommitChangelistDialog2" timestamp="1617015085576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="525" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015085576" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617011228925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -338,6 +184,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617013345489" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617014958264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617014958264" />
+    <state x="760" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617015154784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015154784" />
     <state x="334" y="181" key="new project wizard" timestamp="1617013797319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
