@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../RBAC前端梁冬/donleo-stmg-front-09-master/stmg-front-09/stmg-front-09.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RBAC潘灿/.idea/RBAC潘灿.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SSM/fzdz-SSM-back-8.1/fzdz-8.1-back-ssm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SSM/fzdz-web-8.0/.idea/fzdz-web-8.0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SSM/jxingyu00-fzdz-web-8.0-master/.idea/jxingyu00-fzdz-web-8.0-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../rbac_web-潘产/rbac_static_web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../stmg-back-10/.idea/stmg-back-10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/studentcloud蒋鑫.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../studentcloud蒋鑫/studentcloud.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/cloud.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/common/src/main/java/com/cn/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/common/src/main/java/com/cn/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/eureka/src/main/java/com/xy/permission/controller/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/ribbon-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/ribbon-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/user/src/main/java/com/xy/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloud/user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/eureka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/com/xy/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mistletoe.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/permission.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/layedit-原版.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/Layui-KnifeZ/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/ace/ace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/ace/mode-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/ace/snippets/html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/ace/theme-tomorrow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Content/ace/worker-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../dist/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1qQQlT3LJwaidDqqDtYmJ5j7PRk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/xy/common" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\common\src\main\java\com\xy\common" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xy.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="" />
+      <created>1617009484716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617009484716</updated>
+      <workItem from="1617009487047" duration="5092000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1617010596639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1617010596639" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617011228925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617011228925" />
+    <state x="784" y="423" key="Github.CreateGistDialog" timestamp="1617013311962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="423" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617013311962" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1617014201404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617014201404" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1617013345489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617013345489" />
+    <state x="334" y="181" key="new project wizard" timestamp="1617013797319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1617013797319" />
+  </component>
+</project>

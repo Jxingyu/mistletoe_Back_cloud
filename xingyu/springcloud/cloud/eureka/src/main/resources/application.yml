@@ -1,0 +1,81 @@
+server:
+  port: 8761 #指定运行端口
+spring:
+  application:
+    name: eureka #指定服务名称
+eureka:
+  instance:
+    hostname: localhost #指定主机地址
+  client:
+    fetch-registry: false #指定是否要从注册中心获取服务（默认true）
+    register-with-eureka: false #指定是否要注册到注册中心（默认true）
+  server:
+    enable-self-preservation: false #是否开启保护模式（默认true）
+    eviction-interval-timer-in-ms: 10000 #10s 清理间隔（单位毫秒，默认是60*1000）
+
+#spring:
+#  profiles:
+#    active: eureka3
+#---
+#spring:
+#  application:
+#    name: eureka-cluster #指定服务名称
+#  profiles: eureka1
+#server:
+#  port: 8011 #指定运行端口
+#eureka:
+#  instance:
+#    hostname: localhost #指定主机地址
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#  client:
+#    register-with-eureka: true #指定是否要注册到注册中心（默认true）
+#    fetch-registry: true #指定是否要从注册中心获取服务（默认true）
+#    serviceUrl:
+#      defaultZone: http://localhost:8012/eureka/,http://localhost:8013/eureka/ #注册到另一个Eureka注册中心
+#  server:
+#    enable-self-preservation: false #是否开启保护模式（默认true）
+#    eviction-interval-timer-in-ms: 5000 # 清理无效服务节点的时间间隔（单位毫秒，默认是60*1000）
+#---
+#spring:
+#  application:
+#    name: eureka-cluster #指定服务名称
+#  profiles: eureka2
+#server:
+#  port: 8012 #指定运行端口
+#eureka:
+#  instance:
+#    hostname: localhost #指定主机地址
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#  client:
+#    register-with-eureka: true #指定是否要注册到注册中心（默认true）
+#    fetch-registry: true #指定是否要从注册中心获取服务（默认true）
+#    serviceUrl:
+#      defaultZone: http://localhost:8011/eureka/,http://localhost:8013/eureka/ #注册到另一个Eureka注册中心
+#  server:
+#    enable-self-preservation: false #是否开启保护模式（默认true）
+#    eviction-interval-timer-in-ms: 5000 # 清理无效服务节点的时间间隔（单位毫秒，默认是60*1000）
+#---
+#spring:
+#  application:
+#    name: eureka-cluster #指定服务名称
+#  profiles: eureka3
+#server:
+#  port: 8013 #指定运行端口
+#eureka:
+#  instance:
+#    hostname: localhost #指定主机地址
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#  client:
+#    register-with-eureka: true #指定是否要注册到注册中心（默认true）
+#    fetch-registry: true #指定是否要从注册中心获取服务（默认true）
+#    serviceUrl:
+#      defaultZone: http://localhost:8012/eureka/,http://localhost:8011/eureka/ #注册到另一个Eureka注册中心
+#  server:
+#    enable-self-preservation: false #是否开启保护模式（默认true）
+#    eviction-interval-timer-in-ms: 5000 # 清理无效服务节点的时间间隔（单位毫秒，默认是60*1000）
+
+# Running the evict task with compensationTime 0ms  解决⬇ 总是重复出现
+logging:
+  level:
+    com.netflix: warn
+
