@@ -1,0 +1,49 @@
+spring:
+  redis:
+    host: localhost # Redis服务器地址
+    database: 0 # Redis数据库索引（默认为0）
+    port: 6379 # Redis服务器连接端口
+    password: # Redis服务器连接密码（默认为空）
+
+  application:
+    name: user
+  #  security:
+  #      user:
+  #        name: xingyu
+  #        password: 8520
+  datasource:
+    #数据库地址
+    url: jdbc:mysql://localhost:3306/mistletoe?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    #      url=jdbc:mysql://192.168.0.133/mistletoe?characterEncoding=UTF-8&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    #数据账号
+    username: root
+    #数据密码
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    application:
+      name: security
+
+#生成用
+mybatis-plus:
+  type-aliases-package: com.xy.model
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+jwt:
+  #定义我们的盐  密码
+  secret: mySecret
+  #过期时间
+  expiration: 3600
+  #token 的类型 说明他以 bearer 开头
+  tokenHead: bearer
+  #token 对应的 key
+  tokenHeader: Authorization
+  #  {Authorization: "bearer jghrwg5thfdsfsrr0asfdagsdf"}
+
+  #打印sql
+logging:
+  level:
+    com.xy.user.mapper: debug
+
+server:
+  port: 8910 #运行端口号
+

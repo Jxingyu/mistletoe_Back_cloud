@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.security.mapper.LoginUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.User">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="icon" property="icon" />
+        <result column="email" property="email" />
+        <result column="contend" property="contend" />
+        <result column="create_time" property="createTime" />
+        <result column="login_time" property="loginTime" />
+        <result column="status" property="status" />
+        <result column="captcha" property="captcha" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, username, password, icon, email, contend, create_time, login_time, status, captcha
+    </sql>
+
+<!--    <select id="checkUser" resultMap="BaseResultMap" parameterType="com.cn.mistletoe.model.User">-->
+<!--&lt;!&ndash; select * from mistletoe.user where username=#{username} and password =#{password}&ndash;&gt;-->
+<!-- select * from mistletoe.user where username=#{username} and password =#{password}-->
+<!--    </select>-->
+
+    <select id="getUserByUsername" resultType="com.xy.model.User" >
+         select * from mistletoe.user where username=#{username};
+    </select>
+
+    <select id="getPermissionByRoleId" parameterType="java.lang.Integer" resultType="com.xy.model.User">
+        <!--select * from  mistletoe.permission p where p.id in(
+            select rp.permission_id from role_permission_relation rp where rp.role_id  in
+                (select ur.role_id from  user_role_relation ur where ur.user_id =#{userId})
+            UNION
+            select up.permission_id  from user_permission_relation up where up.type=1 and up.user_id=#{userId}
+        )
+        and p.id not in(
+            select up.permission_id  from user_permission_relation up where up.type=-1 and up.user_id=#{userId}
+        )-->select * from permission as p where p.id in (
+                    select rpr.permission_id  from role_permission_relation AS rpr
+                    where rpr.role_id = (select urr.role_id from user_role_relation AS urr where urr.user_id = #{id})
+                    )
+<!--                           select * from wx_permission where id in
+      (select permission_id from wx_role_permission_relation where role_id in
+        (select id from wx_role where id in
+        (
+        select role_id from wx_user_role_relation where admin_id = #{userId}
+        )))-->
+    </select>
+
+    <select id="getUserById" resultMap="BaseResultMap" parameterType="com.xy.model.User">
+        select * from user where id =#{id};
+    </select>
+
+    <select id="findAll" resultMap="BaseResultMap" parameterType="com.xy.model.User">
+        select * from user where 1 = 1
+        <if test="username != null and username != ''">
+            and user.username like concat('%',#{username},'%')
+        </if>
+        <if test="startDate != null and startDate != ''">
+            and user.create_time &gt;= #{startDate}
+        </if>
+        <if test="endDate != null and endDate != ''">
+            and  user.create_time &lt;= #{endDate}
+        </if>
+        <if test="startDate != null and startDate != '' and endDate != null and endDate != ''">
+            and user.create_time between #{startDate} and #{endDate}
+        </if>
+        <if test="pageSize != null and pageSize !='' and curPage != null and curPage != ''">
+             <bind name="curPage" value="(curPage-1)*pageSize"/>
+             limit #{curPage},#{pageSize}
+        </if>
+    </select>
+    <update id="playerUpdate" parameterType="com.xy.model.User">
+     UPDATE user AS u set
+        <if test="username != null and username !='' ">
+            u.username=#{username},
+        </if>
+        <if test="sex != null and sex !='' ">
+            u.sex=#{sex},
+        </if>
+        <if test="phone != null and phone!= '' ">
+            u.phone=#{phone},
+        </if>
+        <if test="address != null and address!= '' ">
+            u.address=#{address},
+        </if>
+            u.create_time=#{createTime},
+            
+            u.status=#{status},
+        <if test="password != null and password!= '' ">
+            u.password=#{password},
+        </if>
+         tips = ''
+        <where>
+            u.id = #{id}
+        </where>
+    </update>
+    <update id="uploadFile" parameterType="com.xy.model.User">
+        UPDATE user AS u set
+        <if test="icon != null and icon != ''">
+        u.icon=#{icon},
+        </if>
+         tips = ''
+        <where>
+            u.id = #{id}
+        </where>
+    </update>
+    <select id="findPlayerById" resultType="com.xy.model.User" parameterType="java.lang.Integer">
+        select * from user where id = #{id}
+    </select>
+    <select id="findTotalCount" resultType="int" parameterType="com.xy.model.User">
+        select count(*) from user
+
+    </select>
+    <select id="findPlayerAll" resultMap="BaseResultMap" parameterType="com.xy.model.User">
+         select * from user where 1 = 1
+        <if test="username != null and username != ''">
+            and user.username like concat('%',#{username},'%')
+        </if>
+        <if test="startDate != null and startDate != ''">
+            and user.create_time &gt;= #{startDate}
+        </if>
+        <if test="endDate != null and endDate != ''">
+            and  user.create_time &lt;= #{endDate}
+        </if>
+        <if test="startDate != null and startDate != '' and endDate != null and endDate != ''">
+            and user.create_time between #{startDate} and #{endDate}
+        </if>
+        <if test="pageSize != null and pageSize !='' and curPage != null and curPage != ''">
+             <bind name="curPage" value="(curPage-1)*pageSize"/>
+             limit #{curPage},#{pageSize}
+        </if>
+    </select>
+    <insert id="register">
+            insert into user (username,sex,phone,address,create_time,status,password)
+            values(#{username},#{sex},#{phone},#{address},#{createTime},#{status},#{password})
+    </insert>
+    <select id="getMaxId" resultType="java.lang.Integer">
+            select max(id) from user;
+    </select>
+
+    <update id="registerIconUpdate" parameterType="com.xy.model.User">
+        UPDATE user AS u set
+            <if test="icon != null and icon != ''">
+            u.icon=#{icon},
+            </if>
+             tips = ''
+            <where>
+                u.id = #{id}
+            </where>
+    </update>
+    <insert id="urrInsert" parameterType="java.lang.Integer">
+             insert into user_role_relation (user_id,role_id)
+            values(#{maxId},7)
+    </insert>
+
+    <select id="findUserByTeamNumbers" resultType="com.xy.model.UserTeamRelation">
+            SELECT * FROM user_team_relation WHERE numbers = #{numbers}
+    </select>
+
+    <select id="selectTeamNameByNumbers" resultType="java.lang.String">
+            SELECT name FROM team WHERE numbers = #{numbers}
+    </select>
+
+    <select id="selectUsernameByUserId" resultType="java.lang.String">
+            SELECT username FROM user WHERE id = #{userId}
+    </select>
+
+    <insert id="insertLoginRecords" parameterType="com.xy.model.LoginRecodes">
+            INSERT INTO login_recodes (user_number,user_name,login_date,login_pc,login_ip)
+                    VALUES ((SELECT id FROM user WHERE username = #{userName}),#{userName},#{loginDate},#{pcName},#{pcIp})
+    </insert>
+
+
+</mapper>

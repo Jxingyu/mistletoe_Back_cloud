@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.user.mapper.UserTeamMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.UserTeamRelation">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="numbers" property="numbers" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, numbers
+    </sql>
+
+
+    <select id="selectUserByTeamNumber" resultType="com.xy.model.User">
+            select * from user where 1= 1
+            <!--user.id in(select user_id from user_team_relation)-->
+    </select>
+
+    <select id="selectUserByTeamId" resultType="com.xy.model.User">
+            select * from user where user.id in(select user_id from user_team_relation as utr where utr.numbers = #{numbers} )
+    </select>
+
+    <select id="selectUtr" resultType="com.xy.model.UserTeamRelation">
+            select * from user_team_relation where  user_team_relation.numbers = #{numbers}
+    </select>
+
+    <insert id="insertUserTeam" parameterType="java.util.List">
+            insert into user_team_relation (user_id,numbers) values
+            <foreach collection="utr" item="item" index="index" separator=",">
+           (#{item.userId},#{item.numbers})
+        </foreach>
+    </insert>
+
+    <delete id="deleteUtrIdInUtr">
+              delete from user_team_relation where
+            <foreach collection="utr" item="item" index="index" separator="or">
+           (user_id = #{item.userId} and numbers = #{item.numbers})
+        </foreach>
+    </delete>
+
+    <select id="selectCaptainInUser" resultType="com.xy.model.User">
+            select * from user where 1= 1
+    </select>
+
+    <select id="selectCaptainIsUsername" resultType="com.xy.model.Team">
+           	select * from user where user.id in (select user_id from user_captain_relation where numbers = #{id})
+    </select>
+
+    <select id="selectUcr" resultType="com.xy.model.UserCaptainRelation">
+            select * from user_captain_relation where  user_captain_relation.numbers = #{id}
+    </select>
+
+    <select id="findPastTeamRecord" resultType="com.xy.model.UserTeamRelation">
+            select * from user_team_relation where user_id = #{uUserId};
+    </select>
+
+    <select id="getUsername" resultType="java.lang.Integer">
+            select username from  team_record where username = (select username from user where id = #{iUserId})
+    </select>
+
+    <delete id="deleteOldUTR">
+        delete from user_team_relation where
+        user_id = #{uUserId}
+           <!-- <foreach collection="utr" item="item" index="index" separator="or">
+           (user_id = #{item.userId} and numbers = #{item.numbers})
+            </foreach>-->
+
+    </delete>
+
+
+
+
+
+</mapper>

@@ -1,23 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="搭建ing">
+    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="搭建ing..">
+      <change afterPath="$PROJECT_DIR$/../../springboot/mistletoe_back_2.0/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springboot/mistletoe_back_2.0/mistletoe.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/FastJson2JsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/DailyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/LoginRecodesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/SignMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/TeamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/TeamRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Daily.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/LoginRecodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/RolePermissionRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Sign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/TeamRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/UserCaptainRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/UserRoleRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/UserTeamRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/config-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/xy/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/PermissionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/mapper/RolePermissionRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/SecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/aop/IpGetAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/common/GetUserNameByToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/common/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/mapper/LoginUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/SecurityUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/MyUserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/SecuritySecurityUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/resources/mapper/LoginUser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/sucurity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/config/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/TestUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserCaptainMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserRoleRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserTeamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/User.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/UserCaptainRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/UserRoleRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/userTeamRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sucurity/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sucurity/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sucurity/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sucurity/sucurity.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/permission.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/xy/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/UserApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/xy/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/controller/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="ProjectId" id="1qQQlT3LJwaidDqqDtYmJ5j7PRk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -37,21 +128,56 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/xy/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\common\src\main\java\com\xy\common" />
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\service\impl" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\permission\src\main\java\com\xy\permission\common" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\controller" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\sucurity\src\main\resources\mapper" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xy.user.config" />
+      <recent name="com.xy.user.common" />
+      <recent name="com.xy.user.controller" />
+      <recent name="com.xy.permission.common" />
+      <recent name="com.xy.security.common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\permission\src\main\resources\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.PermissionApplication">
+    <configuration name="PermissionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xy.permission.PermissionApplication" />
+      <module name="permission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xy.permission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka" />
       <extension name="coverage">
@@ -65,6 +191,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PermissionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="permission" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.permission.PermissionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sucurity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.security.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="user" />
       <extension name="coverage">
@@ -74,14 +214,25 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.user.UserApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.PermissionApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.SecurityApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.PermissionApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Application.PermissionApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +247,12 @@
       <option name="presentableId" value="Default" />
       <updated>1617009484716</updated>
       <workItem from="1617009487047" duration="6032000" />
-      <workItem from="1617015609359" duration="104000" />
+      <workItem from="1617015609359" duration="534000" />
+      <workItem from="1617066807164" duration="22698000" />
+      <workItem from="1617154292692" duration="7807000" />
+      <workItem from="1617163148860" duration="6623000" />
+      <workItem from="1617176461186" duration="9156000" />
+      <workItem from="1617186225740" duration="4581000" />
     </task>
     <task id="LOCAL-00001" summary="搭建ing">
       <created>1617014938412</created>
@@ -112,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617015387196</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="搭建ing..">
+      <created>1617015748838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617015748838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,92 +283,199 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="搭建ing" />
-    <option name="LAST_COMMIT_MESSAGE" value="搭建ing" />
+    <MESSAGE value="搭建ing.." />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建ing.." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1617010596639">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1617084933570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1617010596639" />
-    <state x="525" y="88" key="CommitChangelistDialog2" timestamp="1617015562239">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1617084933570" />
+    <state x="346" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617191214882">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="334" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.831@0.0.1549.831" timestamp="1617172676273" />
+    <state x="346" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1603.862@0.0.1603.862" timestamp="1617191214882" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617155769563" />
+    <state x="606" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1617190105684">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="606" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1603.862@0.0.1603.862" timestamp="1617190105684" />
+    <state x="418" y="356" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617172342364">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="418" y="356" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1549.831@0.0.1549.831" timestamp="1617172342364" />
+    <state x="518" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617071867723" />
+    <state x="227" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617189806222">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="219" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1549.831@0.0.1549.831" timestamp="1617172015266" />
+    <state x="227" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1603.862@0.0.1603.862" timestamp="1617189806222" />
+    <state x="557" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617171862569">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="557" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.831@0.0.1549.831" timestamp="1617171862569" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617086269455" />
+    <state x="530" y="120" key="#xdebugger.evaluate" timestamp="1617173449485">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="530" y="120" key="#xdebugger.evaluate/0.0.1549.831@0.0.1549.831" timestamp="1617173449485" />
+    <state x="525" y="88" key="CommitChangelistDialog2" timestamp="1617015885551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="525" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015562239" />
-    <state x="147" y="86" key="DiffContextDialog" timestamp="1617015432512">
+    <state x="525" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015885551" />
+    <state width="479" height="484" key="DebuggerActiveHint" timestamp="1617190871741">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="462" height="466" key="DebuggerActiveHint/0.0.1549.831@0.0.1549.831" timestamp="1617182902028" />
+    <state width="479" height="484" key="DebuggerActiveHint/0.0.1603.862@0.0.1603.862" timestamp="1617190871741" />
+    <state x="147" y="86" key="DiffContextDialog" timestamp="1617015767418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015432512" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617011228925">
+    <state x="147" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015767418" />
+    <state x="618" y="228" key="FileChooserDialogImpl" timestamp="1617191502415">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="618" y="228" key="FileChooserDialogImpl/0.0.1603.862@0.0.1603.862" timestamp="1617191502415" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617092602635" />
+    <state x="784" y="423" key="Github.CreateGistDialog" timestamp="1617087460683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617011228925" />
-    <state x="784" y="423" key="Github.CreateGistDialog" timestamp="1617013311962">
+    <state x="784" y="423" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617087460683" />
+    <state width="1559" height="267" key="GridCell.Tab.0.bottom" timestamp="1617192718169">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
+    <state width="1559" height="267" key="GridCell.Tab.0.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
+    <state width="1559" height="267" key="GridCell.Tab.0.center" timestamp="1617192718169">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
+    <state width="1559" height="267" key="GridCell.Tab.0.center/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
+    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
+    <state width="1559" height="267" key="GridCell.Tab.0.left" timestamp="1617192718169">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
+    <state width="1559" height="267" key="GridCell.Tab.0.left/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
+    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
+    <state width="1559" height="267" key="GridCell.Tab.0.right" timestamp="1617192718169">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
+    <state width="1559" height="267" key="GridCell.Tab.0.right/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
+    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
+    <state width="1559" height="267" key="GridCell.Tab.1.bottom" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.1.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="247" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648225" />
+    <state width="1559" height="267" key="GridCell.Tab.1.center" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.1.center/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="247" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648225" />
+    <state width="1559" height="267" key="GridCell.Tab.1.left" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1617185724131" />
+    <state width="1559" height="267" key="GridCell.Tab.1.left/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="247" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648224" />
+    <state width="1559" height="267" key="GridCell.Tab.1.right" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.1.right/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="247" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648225" />
+    <state width="1559" height="267" key="GridCell.Tab.2.bottom" timestamp="1617192718083">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.2.bottom/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.2.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192718083" />
+    <state width="1877" height="441" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473727" />
+    <state width="1559" height="267" key="GridCell.Tab.2.center" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.2.center/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.2.center/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="441" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473727" />
+    <state width="1559" height="267" key="GridCell.Tab.2.left" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.2.left/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.2.left/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="441" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473726" />
+    <state width="1559" height="267" key="GridCell.Tab.2.right" timestamp="1617192718082">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1506" height="227" key="GridCell.Tab.2.right/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
+    <state width="1559" height="267" key="GridCell.Tab.2.right/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
+    <state width="1877" height="441" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473727" />
+    <state x="584" y="185" key="RollbackChangesDialog" timestamp="1617192219300">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="584" y="185" key="RollbackChangesDialog/0.0.1603.862@0.0.1603.862" timestamp="1617192219300" />
+    <state x="699" y="223" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015738339" />
+    <state x="365" y="97" width="967" height="563" key="SettingsEditor" timestamp="1617163261780">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="365" y="97" width="967" height="563" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1617163261780" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617158070087" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617015786273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="784" y="423" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617013311962" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1617015584948">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015786273" />
+    <state x="739" y="244" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1617015884401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="739" y="244" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015884401" />
+    <state x="188" y="60" width="1249" height="553" key="dock-window-1" timestamp="1617192653118">
+      <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="188" y="60" width="1249" height="553" key="dock-window-1/0.0.1603.862@0.0.1603.862" timestamp="1617192653118" />
+    <state x="554" y="0" width="555" height="862" key="find.popup" timestamp="1617192752097">
+      <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1617015584948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617015584948" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1617013345489">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617013345489" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617015555945">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015555945" />
+    <state x="554" y="0" width="555" height="862" key="find.popup/0.0.1603.862@0.0.1603.862" timestamp="1617192752097" />
+    <state x="664" y="231" width="591" height="578" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617089072976" />
     <state x="760" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617015154784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015154784" />
-    <state x="334" y="181" key="new project wizard" timestamp="1617013797319">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="278" y="150" key="new project wizard" timestamp="1617189503049">
+      <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="334" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1617013797319" />
+    <state x="269" y="145" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1617178973159" />
+    <state x="278" y="150" key="new project wizard/0.0.1603.862@0.0.1603.862" timestamp="1617189503049" />
+    <state x="334" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1617157353502" />
+    <state x="497" y="192" key="run.anything.popup" timestamp="1617182343315">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="497" y="192" key="run.anything.popup/0.0.1549.831@0.0.1549.831" timestamp="1617182343315" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617095932772" />
+    <state x="503" y="180" width="672" height="542" key="search.everywhere.popup" timestamp="1617177751666">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="503" y="180" width="672" height="542" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1617177751666" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617092570787" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/MyUserDetailsImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/SecuritySecurityUserServiceImpl.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

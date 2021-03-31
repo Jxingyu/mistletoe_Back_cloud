@@ -12,6 +12,8 @@
         <module>eureka</module>
         <module>user</module>
         <module>common</module>
+        <module>sucurity</module>
+        <module>config-server</module>
         <module>permission</module>
     </modules>
 
@@ -23,6 +25,8 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.12</lombok.version>
+        <mysql.version>8.0.13</mysql.version>
+        <mybatis.version>3.1.1</mybatis.version>
     </properties>
 
 
@@ -30,13 +34,12 @@
     <dependencyManagement>
         <!--这里并不是在所有的子工程中引入一下jar，而是当子工程引入的时候不需要指定版本号了。-->
         <dependencies>
-<!--            &lt;!&ndash;在父项目中管理common项目的版本&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>org.example</groupId>-->
-<!--                <artifactId>common</artifactId>-->
-<!--                <version>1.0-SNAPSHOT</version>-->
-<!--            </dependency>-->
-
+            <!--在父项目中管理common项目的版本-->
+            <dependency>
+                <groupId>com.xy.common</groupId>
+                <artifactId>common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
 
             <!--springboot的依赖-->
             <dependency>
@@ -64,13 +67,9 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.13</version>
+                <version>${mysql.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>1.1.10</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -82,13 +81,23 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.13</version>
+                <!--                <version>8.0.13</version>-->
             </dependency>
+            <!--mybatis-plus-->
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>1.1.10</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis.version}</version>
+                <!--3.1.1-->
+                <!--            <version>3.1.2</version>-->
             </dependency>
+            <!--主要的包-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -96,7 +105,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
 
     <!--插件配置-->
