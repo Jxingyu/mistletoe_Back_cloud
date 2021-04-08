@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * <p>
@@ -50,7 +51,6 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
 
 
     /**
-     *
      * @param id
      * @return
      */
@@ -100,6 +100,12 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
             redisService.set("RBAC_SYSTEM:PERMISSION:ALL_PERMISSIONS", permissions);
         }
         return permissions;
+    }
+
+    @Override
+    public Vector<Permission> findPerByRoleId(Integer id) {
+        Vector<Permission> vector = rolePermissionRelationMapper.findPerByRoleId(id);
+        return vector;
     }
 
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.mapper.TeamMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.Team">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="numbers" property="numbers" />
+        <result column="count" property="count" />
+        <result column="captain" property="captain" />
+        <result column="assistant" property="assistant" />
+        <result column="coach" property="coach" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, numbers, count, captain, assistant, coach, create_time
+    </sql>
+
+    <select id="findTeamAll" resultType="com.xy.model.Team">
+            select * from team where 1 = 1;
+    </select>
+    <!--    <select id="findTeamCount" resultType="int">
+            SELECT COUNT(*) FROM user_team_relation WHERE numbers = #{numbers}
+    </select>-->
+
+    <update id="editUpdate" parameterType="com.xy.model.Team">
+            update team set numbers = #{numbers},name = #{name},count = #{count},captain = #{captain},assistant = #{assistant},coach = #{coach},create_time = #{createTime}
+            where numbers = #{numbers}
+    </update>
+
+    <select id="findTeamById" resultMap="BaseResultMap">
+            select * from team where numbers = #{numbers}
+    </select>
+
+    <delete id="deleteTeam" parameterType="com.xy.model.Team">
+            delete from team where numbers = #{numbers}
+    </delete>
+
+    <select id="findAllTeam" resultType="com.xy.model.Team">
+            SELECT * FROM team
+    </select>
+
+    <select id="selectTeamNumbers" resultType="com.xy.model.Team">
+        SELECT numbers FROM team;
+    </select>
+</mapper>

@@ -1,0 +1,16 @@
+com\xy\user\mapper\UserTeamMapper.class
+com\xy\user\controller\UserController.class
+com\xy\user\service\impl\UserServiceImpl.class
+com\xy\user\config\RestTemplateConfig.class
+com\xy\user\controller\TestUserController.class
+com\xy\user\mapper\UserCaptainMapper.class
+com\xy\user\config\FeignConfigLogs.class
+com\xy\user\feign\fallback\UserFeignHystrixFallBack.class
+com\xy\user\controller\UserController$Code.class
+com\xy\user\feign\UserFeignClient.class
+com\xy\user\feign\fallback\PermissionFeignHystrixFallBack.class
+com\xy\user\mapper\UserRoleRelationMapper.class
+com\xy\user\feign\PermissionFeignClient.class
+com\xy\user\mapper\UserMapper.class
+com\xy\user\service\impl\UserService.class
+com\xy\user\UserApplication.class

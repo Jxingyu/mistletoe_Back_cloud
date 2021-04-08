@@ -8,12 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="user" />
+        <module name="zuul" />
+        <module name="code" />
+        <module name="captcha" />
         <module name="common" />
         <module name="permission" />
+        <module name="role" />
         <module name="eureka" />
         <module name="config-server" />
         <module name="sucurity" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="code" target="1.8" />
+      <module name="role" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

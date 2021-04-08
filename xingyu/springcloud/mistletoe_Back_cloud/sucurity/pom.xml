@@ -34,11 +34,6 @@
             <groupId>com.xy.common</groupId>
             <artifactId>common</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.xy.sucurity</groupId>-->
-<!--            <artifactId>sucurity</artifactId>-->
-<!--            <version>1.0-SNAPSHOT</version>-->
-<!--        </dependency>-->
 
         <!-- Web Dependencies -->
         <dependency>

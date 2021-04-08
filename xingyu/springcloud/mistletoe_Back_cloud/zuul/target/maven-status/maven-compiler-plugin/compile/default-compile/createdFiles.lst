@@ -1,0 +1,12 @@
+com\xy\zuul\feign\SecurityFallBack.class
+com\xy\zuul\config\JwtTokenUtil.class
+com\xy\zuul\common\DateUtils.class
+com\xy\zuul\filter\MyLogFilter.class
+com\xy\zuul\feign\SecurityFeign.class
+com\xy\zuul\config\FeignConfig.class
+com\xy\zuul\common\ResultCode.class
+com\xy\zuul\config\FilterConfig.class
+com\xy\zuul\ZuulApplication.class
+com\xy\zuul\common\CommonResult.class
+com\xy\zuul\filter\TokenFilter.class
+com\xy\zuul\common\IErrorCode.class

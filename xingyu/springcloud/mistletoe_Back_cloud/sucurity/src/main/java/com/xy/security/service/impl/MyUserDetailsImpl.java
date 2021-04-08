@@ -1,7 +1,7 @@
 package com.xy.security.service.impl;
 
 import com.xy.model.Permission;
-import com.xy.model.User;
+import com.xy.security.model.User;
 import com.xy.security.service.SecurityUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -21,7 +21,7 @@ public class MyUserDetailsImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        List <Permission> list;
+        List<com.xy.security.model.Permission> list;
         User user = securityUserService.getUserByUsername(username);// 查出用户信息
         list = securityUserService.getPermissionByRoleId(user.getId());// 通过用户信息里的ID查出权限
 //        HashSet<Permission> permissions = new HashSet<>(permissionList);// HashSet去重复

@@ -3,7 +3,7 @@ package com.xy.security.aop;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xy.common.DateUtils;
 import com.xy.model.LoginRecodes;
-import com.xy.model.User;
+import com.xy.security.model.User;
 import com.xy.security.mapper.LoginUserMapper;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -35,7 +35,7 @@ public class IpGetAdvice {
     private Logger logger = LoggerFactory.getLogger(IpGetAdvice.class);
 
     // 切点定义 并且设置切点作用域
-    @Pointcut(value = "execution( * com.xy.security.controller.LoginController.*(..))")
+    @Pointcut(value = "execution( * com.xy.security.controller.LoginController.login(..))")
 // controller下所有的类* 所有的方法* 不限定参数类型. 和个数.
     public void myIpPointcut() {
 

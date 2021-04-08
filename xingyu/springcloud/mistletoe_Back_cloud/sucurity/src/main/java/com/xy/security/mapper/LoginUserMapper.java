@@ -1,8 +1,8 @@
 package com.xy.security.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.xy.model.Permission;
-import com.xy.model.User;
+import com.xy.security.model.Permission;
+import com.xy.security.model.User;
 import com.xy.model.UserTeamRelation;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

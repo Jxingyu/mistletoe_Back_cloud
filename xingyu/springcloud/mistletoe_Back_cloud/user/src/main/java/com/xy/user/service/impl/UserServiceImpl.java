@@ -7,6 +7,7 @@ import com.xy.model.User;
 import com.xy.model.UserTeamRelation;
 import com.xy.service.RedisService;
 import com.xy.user.mapper.UserMapper;
+import com.xy.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +16,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;

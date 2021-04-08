@@ -1,0 +1,71 @@
+spring:
+  application:
+    name: zuul-proxy   #服务名
+
+server:
+  port: 10000    # 端口
+
+#注册中心相关配置
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 3
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#网关配置
+zuul:
+  MyLogFilter:    #自定义过滤器的名称
+    pre:        #自定义过滤器类型
+      disable: true  # 是否禁用
+  prefix: /api/      #前缀
+  routes:   #路由规则
+    user-service: # 和yml服务名称保持一致
+      path: /u/**
+    #      url: http://localhost:8100    #远程服务必须有url
+    permission:
+      path: /p/**
+    security-service:
+      path: /se/**
+  #    code-service:
+  #      path: /co/**
+  #      url: http://localhost:8166 #真正的微服务地址，path匹配的请求都转发到这里
+  # 关闭那些服务的默认路由
+  ignored-services: '*'
+
+  add-host-header: true
+  #不对敏感资源做拦截 token头之类
+  sensitive-headers:
+  ignored-headers:
+  host:
+    socket-timeout-millis: 6000 # 请求的处理时间
+    connect-timeout-millis: 6000 # 请求的链接时间
+
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+#开启路由端点 浏览器查看路由访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'
+
+#打印feign日志
+logging:
+  level:
+    com.xy.zuul: debug
+jwt:
+  #定义我们的盐  密码
+  secret: mySecret
+  #过期时间
+  expiration: 3600
+  #token 的类型 说明他以 bearer 开头
+  tokenHead: bearer
+  #token 对应的 key
+  tokenHeader: Authorization
+  #  {Authorization: "bearer jghrwg5thfdsfsrr0asfdagsdf"}
+pathlist: '/css/**,/js/**,/fonts/**,/login/check,/code,/register/check,/login/checkAccessToUri,/permission/findPermissionByRoleId/**,/user/findRoleName,
+,/user/updateUserRoleTwo'

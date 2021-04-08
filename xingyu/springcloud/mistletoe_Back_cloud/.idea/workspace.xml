@@ -1,94 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="搭建ing..">
-      <change afterPath="$PROJECT_DIR$/../../springboot/mistletoe_back_2.0/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../springboot/mistletoe_back_2.0/mistletoe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/FastJson2JsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/FilterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/RabbitMqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/config/Swagger2Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/DailyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/LoginRecodesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/SignMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/TeamMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/mapper/TeamRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Daily.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/LoginRecodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/RolePermissionRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Sign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/TeamRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/UserCaptainRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/UserRoleRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/UserTeamRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/service/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/config-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/xy/configserver/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/PermissionApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/mapper/PermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/mapper/RolePermissionRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/impl/PermissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/SecurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/aop/IpGetAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/common/GetUserNameByToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/common/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/mapper/LoginUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/SecurityUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/MyUserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/SecuritySecurityUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/src/main/resources/mapper/LoginUser.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sucurity/sucurity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/config/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/TestUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserCaptainMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserRoleRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/UserTeamMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/User.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/UserCaptainRelation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/UserRoleRelation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/userTeamRelation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sucurity/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sucurity/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sucurity/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sucurity/sucurity.iml" afterDir="false" />
+    <list default="true" id="9882e3a5-82f6-410c-acd7-cd621d3901cf" name="Default Changelist" comment="搭建ing..&#10;c">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/src/main/java/com/xy/captcha/CaptchaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/src/main/java/com/xy/captcha/common/CodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/target/classes/META-INF/captcha.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/target/classes/com/xy/captcha/CaptchaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/captcha/target/classes/com/xy/captcha/common/CodeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mapper/Daily.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mapper/LoginRecodes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mapper/Role.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mapper/SignMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mapper/Team.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mapper/TeamRecord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/common/DateUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/config/FastJson2JsonRedisSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/config/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/config/Swagger2Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/mapper/DailyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/mapper/LoginRecodesMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/mapper/RoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/mapper/SignMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/mapper/TeamMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/mapper/TeamRecordMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/Daily.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/LoginRecodes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/RolePermissionRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/Sign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/TeamRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/UserCaptainRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/UserRoleRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/model/UserTeamRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/service/RedisService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/xy/service/impl/RedisServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/mapper/Daily.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/mapper/LoginRecodes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/mapper/Role.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/mapper/SignMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/mapper/Team.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/mapper/TeamRecord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/classes/com/xy/configserver/ConfigServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/config-server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/target/eureka-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/resources/mapper/Permission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/src/main/resources/mapper/RolePermissionRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/com/xy/permission/PermissionApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/com/xy/permission/controller/PermissionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/com/xy/permission/mapper/PermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/com/xy/permission/mapper/RolePermissionRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/com/xy/permission/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/com/xy/permission/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/mapper/Permission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/classes/mapper/RolePermissionRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/permission/target/permission-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/controller/CodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/mapper/RolePermissionRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/META-INF/sucurity.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/SecurityApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/aop/IpGetAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/common/JwtAuthenticationTokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/config/JwtTokenUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/controller/CodeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/mapper/LoginUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/mapper/PermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/mapper/RolePermissionRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/model/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/service/SecurityUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/service/impl/MyUserDetailsImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/com/xy/security/service/impl/SecurityUserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/classes/mapper/LoginUser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sucurity/target/sucurity-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/config/FeignConfigLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/feign/PermissionFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/feign/UserFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/feign/fallback/PermissionFeignHystrixFallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/feign/fallback/UserFeignHystrixFallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper/RolePermissionRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/Permission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/RolePermissionRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/META-INF/user.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/config/FeignConfigLogs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/config/RestTemplateConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/controller/PermissionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/controller/TestUserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/feign/PermissionFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/feign/UserFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/feign/fallback/PermissionFeignHystrixFallBack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/feign/fallback/UserFeignHystrixFallBack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/mapper/PermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/mapper/RolePermissionRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/mapper/UserCaptainMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/mapper/UserRoleRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/mapper/UserTeamMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/mapper/Permission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/mapper/RolePermissionRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/mapper/User.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/mapper/UserCaptainRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/mapper/UserRoleRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/classes/mapper/userTeamRelation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/user-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/ZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/common/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/common/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/common/GetUserNameByToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/common/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/feign/SecurityFallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/feign/SecurityFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/filter/MyLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/filter/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/META-INF/zuul.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/ZuulApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/common/CommonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/common/DateUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/common/IErrorCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/common/ResultCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/config/FilterConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/config/JwtTokenUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/feign/SecurityFallBack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/feign/SecurityFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/filter/MyLogFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/classes/com/xy/zuul/filter/TokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/target/zuul-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../stmg-back-10/.idea/stmg-back-10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/studentcloud蒋鑫.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../studentcloud蒋鑫/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../studentcloud蒋鑫/studentcloud.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/cloud.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/common/common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/common/src/main/java/com/cn/model/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/common/src/main/java/com/cn/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/eureka/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/eureka/src/main/java/com/xy/permission/controller/EurekaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/eureka/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/ribbon-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/ribbon-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/user/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/user/src/main/java/com/xy/UserApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud/user/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/permission.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xy/common/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/common/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xy/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/config/FilterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xy/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xy/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/xy/common/CommonResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/xy/common/CommonResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/mapper/RolePermissionRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/mapper/RolePermissionRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/xy/permission/service/impl/PermissionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/permission/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/SecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/SecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/aop/IpGetAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/aop/IpGetAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/mapper/LoginUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/mapper/LoginUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/SecurityUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/SecurityUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/MyUserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/MyUserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/SecuritySecurityUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/SecurityUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sucurity/src/main/resources/mapper/LoginUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sucurity/src/main/resources/mapper/LoginUser.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/xy/zuul/config/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/target/classes/com/xy/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/UserApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/target/classes/com/xy/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/xy/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sucurity/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sucurity/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sucurity/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sucurity/sucurity.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +261,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
@@ -128,45 +294,48 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/com/xy/user/service/impl" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/zuul/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/com/xy/user/mapper" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\service\impl" />
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\permission\src\main\java\com\xy\permission\common" />
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\controller" />
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\sucurity\src\main\resources\mapper" />
-      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\config" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\java\com\xy\user\mapper" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\user\src\main\resources\mapper" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\sucurity\src\main\java\com\xy\security\mapper" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\code\src\main\resources" />
+      <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\zuul\src\main\java\com\xy\zuul\common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xy.user.config" />
-      <recent name="com.xy.user.common" />
+      <recent name="com.xy.user.service" />
+      <recent name="com.xy.user.service.impl" />
       <recent name="com.xy.user.controller" />
-      <recent name="com.xy.permission.common" />
-      <recent name="com.xy.security.common" />
+      <recent name="com.xy.zuul.config" />
+      <recent name="com.xy.user.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\xingyu\springcloud\mistletoe_Back_cloud\permission\src\main\resources\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.PermissionApplication">
-    <configuration name="PermissionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xy.permission.PermissionApplication" />
-      <module name="permission" />
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="CaptchaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="captcha" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xy.permission.*" />
+          <option name="PATTERN" value="com.xy.captcha.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.captcha.CaptchaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,6 +356,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.EurekaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,6 +364,7 @@
     <configuration name="PermissionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="permission" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.permission.PermissionApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,7 +376,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="true" temporary="true" nameIsGenerated="true">
       <module name="user" />
       <extension name="coverage">
         <pattern>
@@ -215,24 +386,39 @@
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.user.UserApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="zuul" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xy.zuul.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xy.zuul.ZuulApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PermissionApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.SecurityApplication" />
+      <item itemvalue="Spring Boot.PermissionApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.PermissionApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+      <item itemvalue="Spring Boot.CaptchaApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ZuulApplication" />
+        <item itemvalue="Spring Boot.CaptchaApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
-        <item itemvalue="Application.PermissionApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +438,22 @@
       <workItem from="1617154292692" duration="7807000" />
       <workItem from="1617163148860" duration="6623000" />
       <workItem from="1617176461186" duration="9156000" />
-      <workItem from="1617186225740" duration="4581000" />
+      <workItem from="1617186225740" duration="4945000" />
+      <workItem from="1617241239177" duration="28318000" />
+      <workItem from="1617298605017" duration="76000" />
+      <workItem from="1617336319720" duration="2346000" />
+      <workItem from="1617460955559" duration="1129000" />
+      <workItem from="1617501468210" duration="92000" />
+      <workItem from="1617671633384" duration="3970000" />
+      <workItem from="1617675661731" duration="19000" />
+      <workItem from="1617675702604" duration="5198000" />
+      <workItem from="1617684640217" duration="16085000" />
+      <workItem from="1617757775037" duration="6912000" />
+      <workItem from="1617764775797" duration="7509000" />
+      <workItem from="1617780162141" duration="146000" />
+      <workItem from="1617780325706" duration="12173000" />
+      <workItem from="1617844887264" duration="3852000" />
+      <workItem from="1617848790940" duration="26342000" />
     </task>
     <task id="LOCAL-00001" summary="搭建ing">
       <created>1617014938412</created>
@@ -275,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617015748838</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="搭建ing..&#10;c">
+      <created>1617192852123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617192852124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,23 +492,34 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="搭建ing" />
     <MESSAGE value="搭建ing.." />
-    <option name="LAST_COMMIT_MESSAGE" value="搭建ing.." />
+    <MESSAGE value="搭建ing..&#10;c" />
+    <MESSAGE value="升级ing.." />
+    <option name="LAST_COMMIT_MESSAGE" value="升级ing.." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1617084933570">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="406" y="86" key="#Project_Structure" timestamp="1617848210669">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1617084933570" />
-    <state x="346" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617191214882">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state x="406" y="86" key="#Project_Structure/0.0.1772.957@0.0.1772.957" timestamp="1617848210669" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1617271366981" />
+    <state x="382" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617871789781">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="334" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.831@0.0.1549.831" timestamp="1617172676273" />
     <state x="346" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1603.862@0.0.1603.862" timestamp="1617191214882" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617155769563" />
-    <state x="606" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1617190105684">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state x="365" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1691.910@0.0.1691.910" timestamp="1617337319408" />
+    <state x="382" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1772.957@0.0.1772.957" timestamp="1617871789781" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617273906499" />
+    <state x="617" y="280" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617789523587">
+      <screen x="0" y="0" width="1772" height="957" />
+    </state>
+    <state x="617" y="280" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1772.957@0.0.1772.957" timestamp="1617789523587" />
+    <state x="670" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1617872356965">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="606" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1603.862@0.0.1603.862" timestamp="1617190105684" />
+    <state x="670" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1772.957@0.0.1772.957" timestamp="1617872356965" />
+    <state x="726" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617266421976" />
     <state x="418" y="356" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617172342364">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
@@ -311,169 +530,217 @@
     </state>
     <state x="219" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1549.831@0.0.1549.831" timestamp="1617172015266" />
     <state x="227" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1603.862@0.0.1603.862" timestamp="1617189806222" />
-    <state x="557" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617171862569">
-      <screen x="0" y="0" width="1549" height="831" />
+    <state x="637" y="245" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617870503945">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="557" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.831@0.0.1549.831" timestamp="1617171862569" />
+    <state x="637" y="245" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1772.957@0.0.1772.957" timestamp="1617870503945" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617086269455" />
-    <state x="530" y="120" key="#xdebugger.evaluate" timestamp="1617173449485">
-      <screen x="0" y="0" width="1549" height="831" />
-    </state>
-    <state x="530" y="120" key="#xdebugger.evaluate/0.0.1549.831@0.0.1549.831" timestamp="1617173449485" />
-    <state x="525" y="88" key="CommitChangelistDialog2" timestamp="1617015885551">
+    <state x="657" y="150" width="1021" height="596" key="#xdebugger.evaluate" timestamp="1617267638072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="530" y="120" key="#xdebugger.evaluate/0.0.1549.831@0.0.1549.831" timestamp="1617173449485" />
+    <state x="657" y="150" width="1021" height="596" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1617267638072" />
+    <state x="447" y="17" key="CommitChangelistDialog2" timestamp="1617878841972">
+      <screen x="0" y="0" width="1772" height="957" />
+    </state>
+    <state x="438" y="1" key="CommitChangelistDialog2/0.0.1603.862@0.0.1603.862" timestamp="1617192849995" />
+    <state x="447" y="17" key="CommitChangelistDialog2/0.0.1772.957@0.0.1772.957" timestamp="1617878841972" />
     <state x="525" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015885551" />
-    <state width="479" height="484" key="DebuggerActiveHint" timestamp="1617190871741">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="986" height="274" key="DebuggerActiveHint" timestamp="1617869266909">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="462" height="466" key="DebuggerActiveHint/0.0.1549.831@0.0.1549.831" timestamp="1617182902028" />
     <state width="479" height="484" key="DebuggerActiveHint/0.0.1603.862@0.0.1603.862" timestamp="1617190871741" />
-    <state x="147" y="86" key="DiffContextDialog" timestamp="1617015767418">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="147" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015767418" />
-    <state x="618" y="228" key="FileChooserDialogImpl" timestamp="1617191502415">
+    <state width="986" height="274" key="DebuggerActiveHint/0.0.1772.957@0.0.1772.957" timestamp="1617869266909" />
+    <state width="574" height="584" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1617252079777" />
+    <state x="123" y="71" key="DiffContextDialog" timestamp="1617193033100">
       <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="123" y="71" key="DiffContextDialog/0.0.1603.862@0.0.1603.862" timestamp="1617193033100" />
+    <state x="147" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015767418" />
+    <state x="683" y="253" key="FileChooserDialogImpl" timestamp="1617865502514">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="618" y="228" key="FileChooserDialogImpl/0.0.1603.862@0.0.1603.862" timestamp="1617191502415" />
+    <state x="683" y="253" key="FileChooserDialogImpl/0.0.1772.957@0.0.1772.957" timestamp="1617865502514" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617092602635" />
-    <state x="784" y="423" key="Github.CreateGistDialog" timestamp="1617087460683">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="724" y="389" key="Github.CreateGistDialog" timestamp="1617851337726">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
+    <state x="724" y="389" key="Github.CreateGistDialog/0.0.1772.957@0.0.1772.957" timestamp="1617851337726" />
     <state x="784" y="423" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617087460683" />
-    <state width="1559" height="267" key="GridCell.Tab.0.bottom" timestamp="1617192718169">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1730" height="289" key="GridCell.Tab.0.bottom" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
-    <state width="1559" height="267" key="GridCell.Tab.0.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
-    <state width="1559" height="267" key="GridCell.Tab.0.center" timestamp="1617192718169">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.0.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192791197" />
+    <state width="1648" height="249" key="GridCell.Tab.0.bottom/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.0.bottom/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536113" />
+    <state width="1730" height="289" key="GridCell.Tab.0.center" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
-    <state width="1559" height="267" key="GridCell.Tab.0.center/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
-    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
-    <state width="1559" height="267" key="GridCell.Tab.0.left" timestamp="1617192718169">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.0.center/0.0.1603.862@0.0.1603.862" timestamp="1617192791196" />
+    <state width="1648" height="249" key="GridCell.Tab.0.center/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.0.center/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536113" />
+    <state width="1730" height="289" key="GridCell.Tab.0.left" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
-    <state width="1559" height="267" key="GridCell.Tab.0.left/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
-    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
-    <state width="1559" height="267" key="GridCell.Tab.0.right" timestamp="1617192718169">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.0.left/0.0.1603.862@0.0.1603.862" timestamp="1617192791196" />
+    <state width="1648" height="249" key="GridCell.Tab.0.left/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.0.left/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536113" />
+    <state width="1730" height="289" key="GridCell.Tab.0.right" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1617185724266" />
-    <state width="1559" height="267" key="GridCell.Tab.0.right/0.0.1603.862@0.0.1603.862" timestamp="1617192718169" />
-    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648620" />
-    <state width="1559" height="267" key="GridCell.Tab.1.bottom" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.0.right/0.0.1603.862@0.0.1603.862" timestamp="1617192791197" />
+    <state width="1648" height="249" key="GridCell.Tab.0.right/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.0.right/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536113" />
+    <state width="1730" height="289" key="GridCell.Tab.1.bottom" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.1.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="247" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648225" />
-    <state width="1559" height="267" key="GridCell.Tab.1.center" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.1.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.1.bottom/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.1.bottom/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.1.center" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.1.center/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="247" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648225" />
-    <state width="1559" height="267" key="GridCell.Tab.1.left" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.1.center/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.1.center/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.1.center/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.1.left" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1617185724131" />
-    <state width="1559" height="267" key="GridCell.Tab.1.left/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="247" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648224" />
-    <state width="1559" height="267" key="GridCell.Tab.1.right" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.1.left/0.0.1603.862@0.0.1603.862" timestamp="1617192791124" />
+    <state width="1648" height="249" key="GridCell.Tab.1.left/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.1.left/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.1.right" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.1.right/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="247" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617161648225" />
-    <state width="1559" height="267" key="GridCell.Tab.2.bottom" timestamp="1617192718083">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.1.right/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.1.right/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.1.right/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.2.bottom" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.2.bottom/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.2.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192718083" />
-    <state width="1877" height="441" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473727" />
-    <state width="1559" height="267" key="GridCell.Tab.2.center" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.2.bottom/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.2.bottom/0.0.1691.910@0.0.1691.910" timestamp="1617340096130" />
+    <state width="1730" height="289" key="GridCell.Tab.2.bottom/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.2.center" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.2.center/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.2.center/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="441" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473727" />
-    <state width="1559" height="267" key="GridCell.Tab.2.left" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.2.center/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.2.center/0.0.1691.910@0.0.1691.910" timestamp="1617340096130" />
+    <state width="1730" height="289" key="GridCell.Tab.2.center/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.2.left" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.2.left/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.2.left/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="441" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473726" />
-    <state width="1559" height="267" key="GridCell.Tab.2.right" timestamp="1617192718082">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state width="1559" height="267" key="GridCell.Tab.2.left/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.2.left/0.0.1691.910@0.0.1691.910" timestamp="1617340096129" />
+    <state width="1730" height="289" key="GridCell.Tab.2.left/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
+    <state width="1730" height="289" key="GridCell.Tab.2.right" timestamp="1617878059301">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state width="1506" height="227" key="GridCell.Tab.2.right/0.0.1549.831@0.0.1549.831" timestamp="1617185724132" />
-    <state width="1559" height="267" key="GridCell.Tab.2.right/0.0.1603.862@0.0.1603.862" timestamp="1617192718082" />
-    <state width="1877" height="441" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617161473727" />
+    <state width="1559" height="267" key="GridCell.Tab.2.right/0.0.1603.862@0.0.1603.862" timestamp="1617192791125" />
+    <state width="1648" height="249" key="GridCell.Tab.2.right/0.0.1691.910@0.0.1691.910" timestamp="1617340096130" />
+    <state width="1730" height="289" key="GridCell.Tab.2.right/0.0.1772.957@0.0.1772.957" timestamp="1617878059301" />
+    <state width="1877" height="362" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617274536023" />
     <state x="584" y="185" key="RollbackChangesDialog" timestamp="1617192219300">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="584" y="185" key="RollbackChangesDialog/0.0.1603.862@0.0.1603.862" timestamp="1617192219300" />
     <state x="699" y="223" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015738339" />
-    <state x="365" y="97" width="967" height="563" key="SettingsEditor" timestamp="1617163261780">
-      <screen x="0" y="0" width="1549" height="831" />
+    <state x="241" y="144" width="1053" height="707" key="SettingsEditor" timestamp="1617863219084">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="365" y="97" width="967" height="563" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1617163261780" />
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617158070087" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617015786273">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="521" y="92" width="916" height="708" key="SettingsEditor/0.0.1691.910@0.0.1691.910" timestamp="1617339566048" />
+    <state x="241" y="144" width="1053" height="707" key="SettingsEditor/0.0.1772.957@0.0.1772.957" timestamp="1617863219084" />
+    <state x="681" y="105" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617268813878" />
+    <state x="461" y="210" key="Vcs.Push.Dialog.v2" timestamp="1617193035299">
+      <screen x="0" y="0" width="1603" height="862" />
     </state>
+    <state x="461" y="210" key="Vcs.Push.Dialog.v2/0.0.1603.862@0.0.1603.862" timestamp="1617193035299" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617015786273" />
+    <state x="685" y="257" key="chooseDestDirectoryDialog" timestamp="1617692064012">
+      <screen x="0" y="0" width="1772" height="957" />
+    </state>
+    <state x="685" y="257" key="chooseDestDirectoryDialog/0.0.1772.957@0.0.1772.957" timestamp="1617692064012" />
     <state x="739" y="244" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1617015884401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="244" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015884401" />
+    <state x="658" y="258" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617867299512">
+      <screen x="0" y="0" width="1772" height="957" />
+    </state>
+    <state x="658" y="258" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1772.957@0.0.1772.957" timestamp="1617867299512" />
     <state x="188" y="60" width="1249" height="553" key="dock-window-1" timestamp="1617192653118">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="188" y="60" width="1249" height="553" key="dock-window-1/0.0.1603.862@0.0.1603.862" timestamp="1617192653118" />
-    <state x="554" y="0" width="555" height="862" key="find.popup" timestamp="1617192752097">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state x="612" y="0" width="615" height="957" key="find.popup" timestamp="1617850866267">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="554" y="0" width="555" height="862" key="find.popup/0.0.1603.862@0.0.1603.862" timestamp="1617192752097" />
+    <state x="584" y="0" width="586" height="910" key="find.popup/0.0.1691.910@0.0.1691.910" timestamp="1617336802042" />
+    <state x="612" y="0" width="615" height="957" key="find.popup/0.0.1772.957@0.0.1772.957" timestamp="1617850866267" />
     <state x="664" y="231" width="591" height="578" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617089072976" />
-    <state x="760" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617015154784">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="702" y="387" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617878624373">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
+    <state x="635" y="349" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1603.862@0.0.1603.862" timestamp="1617192969210" />
+    <state x="702" y="387" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1772.957@0.0.1772.957" timestamp="1617878624373" />
     <state x="760" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617015154784" />
-    <state x="278" y="150" key="new project wizard" timestamp="1617189503049">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state x="308" y="167" key="new project wizard" timestamp="1617871531825">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="269" y="145" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1617178973159" />
     <state x="278" y="150" key="new project wizard/0.0.1603.862@0.0.1603.862" timestamp="1617189503049" />
-    <state x="334" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1617157353502" />
-    <state x="497" y="192" key="run.anything.popup" timestamp="1617182343315">
-      <screen x="0" y="0" width="1549" height="831" />
+    <state x="308" y="167" key="new project wizard/0.0.1772.957@0.0.1772.957" timestamp="1617871531825" />
+    <state x="334" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1617270540084" />
+    <state x="569" y="221" width="705" height="712" key="run.anything.popup" timestamp="1617872265054">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="497" y="192" key="run.anything.popup/0.0.1549.831@0.0.1549.831" timestamp="1617182343315" />
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617095932772" />
-    <state x="503" y="180" width="672" height="542" key="search.everywhere.popup" timestamp="1617177751666">
-      <screen x="0" y="0" width="1549" height="831" />
+    <state x="543" y="210" width="672" height="677" key="run.anything.popup/0.0.1691.910@0.0.1691.910" timestamp="1617336810858" />
+    <state x="569" y="221" width="705" height="712" key="run.anything.popup/0.0.1772.957@0.0.1772.957" timestamp="1617872265054" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617250499351" />
+    <state x="575" y="207" width="705" height="625" key="search.everywhere.popup" timestamp="1617679429801">
+      <screen x="0" y="0" width="1772" height="957" />
     </state>
     <state x="503" y="180" width="672" height="542" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1617177751666" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617092570787" />
+    <state x="549" y="197" width="672" height="594" key="search.everywhere.popup/0.0.1691.910@0.0.1691.910" timestamp="1617336826683" />
+    <state x="575" y="207" width="705" height="625" key="search.everywhere.popup/0.0.1772.957@0.0.1772.957" timestamp="1617679429801" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617271313947" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/MyUserDetailsImpl.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sucurity/src/main/java/com/xy/security/service/impl/SecuritySecurityUserServiceImpl.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/captcha/src/main/java/com/xy/captcha/common/CodeController.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

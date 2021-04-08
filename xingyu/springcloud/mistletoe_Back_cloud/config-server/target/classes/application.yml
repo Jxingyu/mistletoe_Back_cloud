@@ -1,0 +1,17 @@
+erver:
+  port: 8907
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git: #配置存储配置信息的Git仓库
+          uri: https://github.com/Jxingyu/mistletoe-config-server-SpringCloud-.git
+          username: Jiangxingyu4517@gmail.com
+          password: 131415217.Jxy
+          clone-on-start: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

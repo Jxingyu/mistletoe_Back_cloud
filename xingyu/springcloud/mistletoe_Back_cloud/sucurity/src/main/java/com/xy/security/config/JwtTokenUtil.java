@@ -1,17 +1,19 @@
 package com.xy.security.config;
 
+import com.xy.security.model.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * JwtToken生成的工具类
@@ -22,25 +24,28 @@ import java.util.Map;
  * {"sub":"wang","created":1489079981393,"exp":1489684781}
  * signature的生成算法：
  * HMACSHA512(base64UrlEncode(header) + "." +base64UrlEncode(payload),secret)
+ * Created by wx on 2019/4/26.
  */
 @Component
 public class JwtTokenUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtTokenUtil.class);
     private static final String CLAIM_KEY_USERNAME = "sub";
-    private static final String CLAIM_KEY_CREATED = "iat";
+    private static final String CLAIM_KEY_CREATED = "created";
+    private static final String CLAIM_KEY_AUTHORITY = "auth";
+
     @Value("${jwt.secret}")
-    private String secret;// 盐
+    private String secret;
     @Value("${jwt.expiration}")
-    private Long expiration;// 过期
+    private Long expiration;
 
     /**
-     * 根据 载荷（用户名 部门 权限 等） 生成JWT的token
+     * 根据负责生成JWT的token
      */
     private String generateToken(Map<String, Object> claims) {
-        return Jwts.builder() //构建Jwt
-                .setClaims(claims) // 放入 claims负载
-                .setExpiration(generateExpirationDate()) // 过期时间
-                .signWith(SignatureAlgorithm.HS512, secret)// 设置签名
+        return Jwts.builder()
+                .setClaims(claims)
+                .setExpiration(generateExpirationDate())
+                .signWith(SignatureAlgorithm.HS512, secret)
                 .compact();
     }
 
@@ -55,13 +60,13 @@ public class JwtTokenUtil {
                     .parseClaimsJws(token)
                     .getBody();
         } catch (Exception e) {
-            LOGGER.info("JWT格式验证失败:{}", token);
+            LOGGER.info("JWT格式验证失败:{}",token);
         }
         return claims;
     }
 
     /**
-     * 生成token的过期时间   30分钟过期
+     * 生成token的过期时间
      */
     private Date generateExpirationDate() {
         return new Date(System.currentTimeMillis() + expiration * 1000);
@@ -74,7 +79,7 @@ public class JwtTokenUtil {
         String username;
         try {
             Claims claims = getClaimsFromToken(token);
-            username = claims.getSubject();
+            username =  claims.getSubject();
         } catch (Exception e) {
             username = null;
         }
@@ -83,7 +88,6 @@ public class JwtTokenUtil {
 
     /**
      * 验证token是否还有效
-     *
      * @param token       客户端传入的token
      * @param userDetails 从数据库中查询出来的用户信息
      */
@@ -111,12 +115,22 @@ public class JwtTokenUtil {
     /**
      * 根据用户信息生成token
      */
-    public String generateToken(UserDetails userDetails) {//User
+    public String generateToken(User userDetails) {
         Map<String, Object> claims = new HashMap<>();
         claims.put(CLAIM_KEY_USERNAME, userDetails.getUsername());// 将数据库查出来的用户名放入载荷Map
         claims.put(CLAIM_KEY_CREATED, new Date());// 创建时间
         return generateToken(claims);// 返回载荷
     }
+//    public String generateToken(User userDetails) {
+//        Map<String, Object> claims = new HashMap<>();
+//        Collection<? extends GrantedAuthority> authorities = userDetails.getAuthorities();
+//        Set<Object> collect = authorities.stream().filter(p -> StringUtils.hasText(p.getAuthority()))
+//                .map(GrantedAuthority::getAuthority).collect(Collectors.toSet());
+//        claims.put(CLAIM_KEY_USERNAME, userDetails.getUsername());
+//        claims.put(CLAIM_KEY_CREATED, new Date());
+//        claims.put(CLAIM_KEY_AUTHORITY,collect);
+//        return generateToken(claims);
+//    }
 
     /**
      * 判断token是否可以被刷新

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.mapper.LoginRecodesMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.LoginRecodes">
+        <id column="id" property="id" />
+        <result column="user_number" property="userNumber" />
+        <result column="user_name" property="userName" />
+        <result column="login-date" property="loginDate" />
+        <result column="login_pc" property="loginPc" />
+        <result column="login_ip" property="loginIp" />
+    </resultMap>
+
+    <select id="SelectAllLoginRecodes" resultType="com.xy.model.LoginRecodes" parameterType="com.xy.model.LoginRecodes">
+            SELECT * FROM login_recodes WHERE  1 = 1
+    </select>
+
+    <select id="importLoginRecodesFromSqlToEs" parameterType="com.xy.model.LoginRecodes" resultType="com.xy.model.LoginRecodes">
+            SELECT * FROM  login_recodes
+    </select>
+
+
+</mapper>

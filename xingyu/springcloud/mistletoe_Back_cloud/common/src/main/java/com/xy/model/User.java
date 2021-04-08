@@ -3,15 +3,15 @@ package com.xy.model;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+
+import lombok.*;
 import lombok.experimental.Accessors;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+//import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  * <p>
@@ -24,8 +24,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ToString
-public class User implements UserDetails  {
+@NoArgsConstructor
+@AllArgsConstructor
+public class User implements Serializable {//
 
     private static final long serialVersionUID = 1L;
 
@@ -92,10 +93,10 @@ public class User implements UserDetails  {
      */
     private String captcha;
 
-    /**
-     * 权限列表(接收getAuthorities()用)
-     */
-    private List<? extends GrantedAuthority> authorities;
+//    /**
+//     * 权限列表(接收getAuthorities()用)
+//     */
+//    private List<? extends GrantedAuthority> authorities;
 
     /**
      * 当前页数
@@ -123,39 +124,40 @@ public class User implements UserDetails  {
      */
     private  String sign;
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities(){
-        return this.authorities;
-    }
-    @Override
-    public String getPassword(){
-        return this.password;
-    }
 
-
-    @Override
-    public String getUsername(){
-        return this.username;
-    }
-
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
+//    @Override
+//    public Collection<? extends GrantedAuthority> getAuthorities(){
+//        return this.authorities;
+//    }
+//    @Override
+//    public String getPassword(){
+//        return this.password;
+//    }
+//
+//
+//    @Override
+//    public String getUsername(){
+//        return this.username;
+//    }
+//
+//
+//    @Override
+//    public boolean isAccountNonExpired() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isAccountNonLocked() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isCredentialsNonExpired() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isEnabled() {
+//        return true;
+//    }
 }

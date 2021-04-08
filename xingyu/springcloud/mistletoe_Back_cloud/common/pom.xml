@@ -68,17 +68,17 @@
             <artifactId>spring-boot-starter-aop</artifactId>
             <version>2.3.2.RELEASE</version>
         </dependency>
-<!--        &lt;!&ndash;RabbtiMQ&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-amqp</artifactId>-->
-<!--            <version>2.3.2.RELEASE</version>-->
-<!--        </dependency>-->
+        <!--        &lt;!&ndash;RabbtiMQ&ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-amqp</artifactId>-->
+        <!--            <version>2.3.2.RELEASE</version>-->
+        <!--        </dependency>-->
         <!--此项目核心依赖 security-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-starter-security</artifactId>-->
+<!--                </dependency>-->
 
         <!--JWT(Json Web Token)登录支持 用于产生token和解析token-->
         <dependency>
@@ -86,12 +86,12 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.0</version>
         </dependency>
-
+        <!-- 这里的报错信息很明了，就是没有配置数据源，因为在创建项目的时候导入了连接数据库的依赖，这里还没有配置上数据源-->
         <!--链接mysql-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <!--            <version>8.0.13</version>-->
+            <!--<version>8.0.13</version>-->
         </dependency>
 
     </dependencies>

@@ -4,11 +4,9 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+
+import lombok.*;
 import lombok.experimental.Accessors;
-import org.springframework.security.core.GrantedAuthority;
 
 /**
  * <p>
@@ -21,9 +19,9 @@ import org.springframework.security.core.GrantedAuthority;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ToString
-
-public class Permission implements Serializable, GrantedAuthority {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Permission implements Serializable {//
 
     private static final long serialVersionUID = 1L;
     @TableId(value = "id", type = IdType.AUTO)
@@ -74,12 +72,12 @@ public class Permission implements Serializable, GrantedAuthority {
      */
     private Integer permissionId;
 
-    /**
-     * 手动添加权限值
-     * @return
-     */
-    @Override
-    public String getAuthority() {
-        return value;
-    }
+//    /**
+//     * 手动添加权限值
+//     * @return
+//     */
+//    @Override
+//    public String getAuthority() {
+//        return this.uri;
+//    }
 }

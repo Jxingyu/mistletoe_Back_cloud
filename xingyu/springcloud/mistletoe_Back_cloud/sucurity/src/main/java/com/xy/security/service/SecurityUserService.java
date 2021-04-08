@@ -2,13 +2,10 @@ package com.xy.security.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xy.common.CommonResult;
-import com.xy.model.Permission;
-import com.xy.model.User;
-import com.xy.model.UserTeamRelation;
-
+import com.xy.security.model.Permission;
+import com.xy.security.model.User;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.Vector;
 
 /**
  * <p>
@@ -25,6 +22,8 @@ public interface SecurityUserService extends IService<User> {
     User getUserByUsername(String username);
 //
     List<Permission> getPermissionByRoleId(Integer id);
+
+    CommonResult checkAccessToUri(String uri, String username);
 //
 //    Vector findAll(User user);
 //

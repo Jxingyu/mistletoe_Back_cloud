@@ -14,6 +14,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+/**
+ * 跨域
+ */
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)// 允许方法上使用一些注解 /*访问方法前进行权限校验*/
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -34,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/css/**", "/js/**", "/fonts/**", "/login/check", "/code", "/register/check", "/user/registerIconUpdate"
-                        , "/utr/select/user", "/utr/select/userByTeamId", "/utr/selectUtr", "/utr/insertUserTeam", "/utr/deleteUtrIdInUtr"
+                        ,"/login/checkAccessToUri", "/utr/select/user", "/utr/select/userByTeamId", "/utr/selectUtr", "/utr/insertUserTeam", "/utr/deleteUtrIdInUtr"
                         , "/utr/select/captain", "/utr/select/NowCaptain", "/utr/selectUcr", "/team/findTeamById"
                         , "/sign/findSignById", "/daily/selectDailyId", "/daily/selectDailyEditMesByUserId/**"
                         , "/daily/selectDailyById/**", "/daily/updateDraftDaily", "/daily/updateDailyStatus/**").permitAll()

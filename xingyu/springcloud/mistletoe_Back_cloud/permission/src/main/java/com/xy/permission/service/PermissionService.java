@@ -7,6 +7,7 @@ import com.xy.model.RolePermissionRelation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * <p>
@@ -31,4 +32,6 @@ public interface PermissionService extends IService<Permission> {
     ArrayList<Permission> findPermissionsByRoleId(Integer roleId);
 
     ArrayList<Permission> findAllPermission();
+
+    Vector<Permission> findPerByRoleId(Integer id);
 }
