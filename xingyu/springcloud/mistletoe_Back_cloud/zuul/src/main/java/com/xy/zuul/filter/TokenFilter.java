@@ -75,28 +75,28 @@ public class TokenFilter extends ZuulFilter {
     }
 
     // 验证权限第一种方法：本地验证
-    private Object checkLocal(String token, RequestContext requestContext, String uri) {
-        Set<String> auths = null;
-        try {
-            auths = jwtTokenUtil.getAuthsFromToken(token);
-        } catch (Exception e) {
-            // 处理token过期
-            if (e instanceof ExpiredJwtException) {
-                requestContext.setResponseBody("token 过期");
-                requestContext.setSendZuulResponse(false);
-                return null;
-            }
-            e.printStackTrace();
-        }
-        //验证权限
-        boolean b = auths.stream().anyMatch(auth -> StringUtils.equals(auth, uri));
-        if (!b) {
-            requestContext.setResponseBody("您没有权限");
-            requestContext.setSendZuulResponse(false);
-            return null;
-        }
-        return null;
-    }
+//    private Object checkLocal(String token, RequestContext requestContext, String uri) {
+//        Set<String> auths = null;
+//        try {
+//            auths = jwtTokenUtil.getAuthsFromToken(token);
+//        } catch (Exception e) {
+//            // 处理token过期
+//            if (e instanceof ExpiredJwtException) {
+//                requestContext.setResponseBody("token 过期");
+//                requestContext.setSendZuulResponse(false);
+//                return null;
+//            }
+//            e.printStackTrace();
+//        }
+//        //验证权限
+//        boolean b = auths.stream().anyMatch(auth -> StringUtils.equals(auth, uri));
+//        if (!b) {
+//            requestContext.setResponseBody("您没有权限");
+//            requestContext.setSendZuulResponse(false);
+//            return null;
+//        }
+//        return null;
+//    }
 
     // 第二种方法：远程调用验证(复杂的认证)
     private Object checkLongRange(String token, RequestContext requestContext, String uri) {

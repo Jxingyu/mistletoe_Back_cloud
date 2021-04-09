@@ -13,7 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.Assert;
+import org.springframework.util.PathMatcher;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -163,13 +165,27 @@ public class SecurityUserServiceImpl extends ServiceImpl<LoginUserMapper, User> 
     public CommonResult checkAccessToUri(String uri, String username) {
         User user = getUserByUsername(username);  // 根据用户查询用户实例
         List<Permission> permissions = getPermissionByRoleId(user.getId());
-        boolean b = permissions.stream().anyMatch(Permission -> StringUtils.equals(Permission.getUri(), uri));// 权限对比
-//        return b ? CommonResult.success(true) : CommonResult.failed();
-//         return b ? CommonResult.success(permissions) : CommonResult.failed("权限对比失败");
-        if (b) {
+
+        boolean b1 = permissions.stream().anyMatch(Permission -> StringUtils.equals(Permission.getUri(), uri));// 普通 uri 权限对比
+        if (b1) {
             return CommonResult.success(permissions);
         } else {
-            return CommonResult.failed("权限对比失败");
+            boolean b = permissions.stream().anyMatch(Permission -> uriCompared(Permission.getUri(), uri));// restFull uri 权限对比
+//        return b ? CommonResult.success(true) : CommonResult.failed();
+//         return b ? CommonResult.success(permissions) : CommonResult.failed("权限对比失败");
+            if (b) {
+                return CommonResult.success(permissions);
+            } else {
+                return CommonResult.failed("权限对比失败");
+            }
         }
+
+    }
+
+    public Boolean uriCompared(String PerSqlUri, String uri) {
+        PathMatcher pathMatcher = new AntPathMatcher();
+//        boolean matches = pathMatcher.match("/api/u/team/deleteTeam/**", "/api/u/team/deleteTeam/100");
+        boolean matches = pathMatcher.match(PerSqlUri, uri);
+        return matches;
     }
 }

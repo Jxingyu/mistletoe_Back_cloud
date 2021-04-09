@@ -4,6 +4,7 @@ package com.xy.user.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xy.common.CommonResult;
+import com.xy.common.MyImgLoad;
 import com.xy.model.Role;
 import com.xy.model.User;
 import com.xy.user.feign.PermissionFeignClient;
@@ -13,7 +14,9 @@ import com.xy.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
@@ -204,24 +207,57 @@ public class UserController {
     }
 
 
+    private static String imgurl = "/images/";
+
     /**
-     * Test
-     * 基于ribbon实现远程调用
+     * 队员个人信息 图片编辑功能
      *
      * @param id
+     * @param request
+     * @param file
+     * @return
+     * @throws IOException
+     */
+    @PostMapping("/player/iconUpdate")
+    public CommonResult uploadFile(@RequestParam int id, HttpServletRequest request, @RequestParam("icon") MultipartFile file) throws IOException {
+        MyImgLoad.loadOne(request, file);
+        User user = new User();
+        user.setId(id);
+        user.setIcon((String) request.getAttribute("imgHref"));
+        Integer integer = userService.uploadFile(user);
+        return CommonResult.success(integer, "code:200");
+    }
+
+    /**
+     * 注册页面图片上传功能
+     *
+     * @param id
+     * @param request
+     * @param file
      * @return
      */
-    //test远程调用Permission服务
-    // 将查询出来的userId远程传递到Permission服务 获取角色  获取权限
-//    @GetMapping(value = {"/findPermissionByRoleId/{id}"})
-//    public CommonResult findPlayerById(@PathVariable("id") Integer id) {
-////        CommonResult forObject = restTemplate.getForObject("http://localhost:8110/permission/findPermissionByRoleId/" + id, CommonResult.class);
-//        //因为负载均衡 所有IP和端口不能写死 要改为模块的服务名
-//        CommonResult forObject = restTemplate.getForObject("http://permission-service/permission/findPermissionByRoleId/" + id, CommonResult.class);
-//        // 获取permission权限ByRoleId
-//        List data = (List) forObject.getData();
-//        return CommonResult.success(data, "200");
-//    }
+    @PostMapping("/registerIconUpdate")
+    public CommonResult registerIconUpdate(@RequestParam int id, HttpServletRequest request, @RequestParam("icon") MultipartFile file) {
+        MyImgLoad.loadOne(request, file);
+        User user = new User();
+        user.setId(id);
+        user.setIcon((String) request.getAttribute("imgHref"));
+        Integer integer = userService.registerIconUpdate(user);
+        return CommonResult.success(integer, "code:200");
+    }
+
+    /**
+     * 个人信息注册
+     *
+     * @param user
+     * @return
+     */
+    @PostMapping("/register/check")
+    public CommonResult register(@RequestBody User user) {
+        CommonResult result = userService.register(user);
+        return CommonResult.success(result, "200");
+    }
+
 
     /**
      * Test
@@ -240,5 +276,22 @@ public class UserController {
         Object data = permissionFeignResult.getData();
         return CommonResult.success(data);
     }
-
+    /**
+     * Test
+     * 基于ribbon实现远程调用
+     *
+     * @param id
+     * @return
+     */
+    //test远程调用Permission服务
+    // 将查询出来的userId远程传递到Permission服务 获取角色  获取权限
+//    @GetMapping(value = {"/findPermissionByRoleId/{id}"})
+//    public CommonResult findPlayerById(@PathVariable("id") Integer id) {
+////        CommonResult forObject = restTemplate.getForObject("http://localhost:8110/permission/findPermissionByRoleId/" + id, CommonResult.class);
+//        //因为负载均衡 所有IP和端口不能写死 要改为模块的服务名
+//        CommonResult forObject = restTemplate.getForObject("http://permission-service/permission/findPermissionByRoleId/" + id, CommonResult.class);
+//        // 获取permission权限ByRoleId
+//        List data = (List) forObject.getData();
+//        return CommonResult.success(data, "200");
+//    }
 }

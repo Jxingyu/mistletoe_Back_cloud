@@ -26,5 +26,5 @@ public interface RoleService extends IService<Role> {
 
     List findAll();
 
-    /*ArrayList findAllRoles();*/
+    ArrayList findAllRoles();
 }

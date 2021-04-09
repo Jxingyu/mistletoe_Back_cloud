@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xy.mapper.RoleMapper;
 import com.xy.model.Role;
 import com.xy.service.impl.RedisServiceImpl;
+import com.xy.user.service.PermissionService;
 import com.xy.user.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,8 +26,8 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
     RoleMapper roleMapper;
     @Autowired
     RedisServiceImpl redisService;
-/*    @Autowired
-    PermissionService permissionService;*/
+    @Autowired
+    PermissionService permissionService;
     @Override
     public List findRoleNameById(Integer id) {
         return roleMapper.findRoleNameById(id);
@@ -53,7 +54,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
         return roleMapper.findAll();
     }
 
-/*    @Override
+    @Override
     public ArrayList findAllRoles() {
         ArrayList<Role> roles;
         if (redisService.hasKey("RBAC_SYSTEM:ROLE:ROLES")){
@@ -67,5 +68,5 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
             redisService.set("RBAC_SYSTEM:ROLE:ROLES",roles);
         }
             return roles;
-    }*/
+    }
 }
