@@ -170,22 +170,20 @@ public class SecurityUserServiceImpl extends ServiceImpl<LoginUserMapper, User> 
         if (b1) {
             return CommonResult.success(permissions);
         } else {
-            boolean b = permissions.stream().anyMatch(Permission -> uriCompared(Permission.getUri(), uri));// restFull uri 权限对比
-//        return b ? CommonResult.success(true) : CommonResult.failed();
-//         return b ? CommonResult.success(permissions) : CommonResult.failed("权限对比失败");
-            if (b) {
-                return CommonResult.success(permissions);
-            } else {
-                return CommonResult.failed("权限对比失败");
-            }
-        }
+            boolean b = permissions.stream().anyMatch(p -> (uriCompared(p.getUri(), uri)));// restFull uri 权限对比
+            return b ? CommonResult.success(permissions) : CommonResult.failed("权限对比失败");
 
+        }
     }
 
+    /**
+     * @param PerSqlUri:/api/u/team/deleteTeam/**
+     * @param uri:/api/u/team/deleteTeam/100
+     * @return
+     */
     public Boolean uriCompared(String PerSqlUri, String uri) {
         PathMatcher pathMatcher = new AntPathMatcher();
-//        boolean matches = pathMatcher.match("/api/u/team/deleteTeam/**", "/api/u/team/deleteTeam/100");
         boolean matches = pathMatcher.match(PerSqlUri, uri);
-        return matches;
+        return matches ? true : false;
     }
 }

@@ -14,9 +14,9 @@
         <module>common</module>
         <module>sucurity</module>
         <module>config-server</module>
-        <module>permission</module>
         <module>zuul</module>
-        <module>captcha</module>
+        <module>daily</module>
+        <module>word</module>
     </modules>
 
     <!-- 将版本 设为变量 让下面调用-->
@@ -40,6 +40,11 @@
             <dependency>
                 <groupId>com.xy.common</groupId>
                 <artifactId>common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xy.sucurity</groupId>
+                <artifactId>sucurity</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 

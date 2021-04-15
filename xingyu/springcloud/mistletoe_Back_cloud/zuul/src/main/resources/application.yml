@@ -25,10 +25,14 @@ zuul:
     user-service: # 和yml服务名称保持一致
       path: /u/**
     #      url: http://localhost:8100    #远程服务必须有url
-    permission:
-      path: /p/**
     security-service:
       path: /se/**
+
+    daily-service:
+      path: /d/**
+
+    word-service:
+      path: /w/**
   #    code-service:
   #      path: /co/**
   #      url: http://localhost:8166 #真正的微服务地址，path匹配的请求都转发到这里
@@ -56,7 +60,7 @@ management:
 #打印feign日志
 logging:
   level:
-    com.xy.zuul: debug
+    com.xy.word: debug
 jwt:
   #定义我们的盐  密码
   secret: mySecret
@@ -69,4 +73,4 @@ jwt:
   #  {Authorization: "bearer jghrwg5thfdsfsrr0asfdagsdf"}
 pathlist: '/css/**,/js/**,/fonts/**,/login/check,/code,/user/register/check,/login/checkAccessToUri,/permission/findPermissionByRoleId/**,/user/findRoleName,
 ,/user/updateUserRoleTwo,/permission/selectPmsByRoleId,/permission/selectRpr,/user/player/iconUpdate,/user/registerIconUpdate,/utr/selectUser,/utr/selectUserByTeamId,
-,utr/selectUtr,/utr/select/captain,/utr/select/NowCaptain,/utr/selectUcr,/team/findTeamById'
+,utr/selectUtr,/utr/select/captain,/utr/select/NowCaptain,/utr/selectUcr,/team/findTeamById,/daily/updateDraftDaily,/LoginRecodes/SelectAll'

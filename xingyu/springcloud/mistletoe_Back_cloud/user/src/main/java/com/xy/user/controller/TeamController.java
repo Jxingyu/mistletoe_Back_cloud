@@ -2,9 +2,12 @@ package com.xy.user.controller;
 
 import com.xy.common.CommonResult;
 import com.xy.model.Team;
+import com.xy.model.TeamRecord;
+import com.xy.user.service.TeamRecordService;
 import com.xy.user.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Vector;
@@ -14,6 +17,9 @@ import java.util.Vector;
 public class TeamController {
     @Autowired
     TeamService teamService;
+
+    @Autowired
+    TeamRecordService teamRecordService;
 
     /**
      * 团队模块——小队列表查询
@@ -66,6 +72,17 @@ public class TeamController {
     public CommonResult deleteTeam(@PathVariable("numbers") int numbers) {
         int result = teamService.deleteTeam(numbers);
         return CommonResult.success(result, "200");
+    }
+
+    /**
+     * 调队记录
+     * @return
+     */
+    @GetMapping("/findTeamRecord")
+//    @PreAuthorize("hasAuthority('team:change:notes')")
+    public CommonResult findTeamRecord() {
+        Vector<TeamRecord> vector = teamRecordService.findTeamRecord();
+        return CommonResult.success(vector, "200");
     }
 
     /*    *//**

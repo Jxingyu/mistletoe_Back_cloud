@@ -38,11 +38,16 @@
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
+
         <!--公共Api-->
         <dependency>
             <groupId>com.xy.common</groupId>
             <artifactId>common</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.xy.sucurity</groupId>-->
+<!--            <artifactId>sucurity</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 </project>

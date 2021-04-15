@@ -10,18 +10,21 @@
         <module name="user" />
         <module name="zuul" />
         <module name="code" />
-        <module name="captcha" />
         <module name="common" />
-        <module name="permission" />
         <module name="role" />
+        <module name="word" />
         <module name="eureka" />
         <module name="config-server" />
+        <module name="daily" />
         <module name="sucurity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="captcha" target="1.8" />
       <module name="code" target="1.8" />
+      <module name="permission" target="1.8" />
       <module name="role" target="1.8" />
+      <module name="sign" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

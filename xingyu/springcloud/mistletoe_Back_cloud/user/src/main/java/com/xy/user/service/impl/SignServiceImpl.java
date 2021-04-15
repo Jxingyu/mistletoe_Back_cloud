@@ -1,6 +1,7 @@
 package com.xy.user.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.xy.common.CommonResult;
 import com.xy.model.Team;
 import com.xy.user.mapper.SignMapper;
 import com.xy.model.Sign;

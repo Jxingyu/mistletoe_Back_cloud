@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+<head>
+    <meta charset="UTF-8">
+    <title>-X-admin2.2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi"/>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="static/layui/lib/layui-v2.5.5/css/layui.css">
+    <link rel="stylesheet" href="static/layui/lib/layui-v2.5.5/css/layui.mobile.css">
+    <link rel="stylesheet" href="css/layui.css" media="all">
+
+    <link rel="stylesheet" href="./css/xadmin.css" media="all">
+    <link rel="stylesheet" href="static/layui/css/page.css">
+    <script src="static/layui/js/common/jQuery .js"></script>
+    <script src="static/layui/js/common/myAjax.js"></script>
+    <script src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/xadmin.js"></script>
+    <script src="static/layui/js/common/page.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="x-nav">
+          <span class="layui-breadcrumb">
+            <a href="">首页</a>
+            <a href="">演示</a>
+            <a>
+              <cite>导航元素</cite></a>
+          </span>
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"
+       onclick="location.reload()" title="刷新">
+        <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i></a>
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body ">
+                    <form class="layui-form layui-col-space5">
+                        <div class="layui-inline layui-show-xs-block">
+                            <input type="text" id="english" placeholder="单词查询" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                        <div class="layui-inline layui-show-xs-block">
+                            <input type="text" id="chinese" placeholder="中文查询" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                        <div class="layui-inline layui-show-xs-block">
+                            <div onclick="findAll()" class="layui-btn" lay-submit="" lay-filter="sreach"><i
+                                    class="layui-icon">&#xe615;</i></div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="layui-card-body layui-table-body layui-table-main">
+                    <table class="layui-table layui-form">
+                        <thead>
+                        <tr>
+                            <th style="width: 10px;">ID</th>
+                            <th>单词</th>
+                            <th>中文</th>
+                            <th>作者</th>
+                            <th>提交时间</th>
+                            <th>点赞</th>
+                            <th>收藏</th>
+                        </tr>
+                        </thead>
+                        <tbody id="manageLoopList">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="layui-card-body ">
+                    <div class="page">
+                        <div style="margin: 0 auto;">
+                            <sp class="prev" href="">每一頁显示<input style="width: 50px" type="number" id="pageSize"
+                                                                 value="10">条
+                            </sp>
+                            <sp>共<span id="totalPage"></span>条</sp>
+                            <sp>当前<input style="width: 50px" type="number" id="curPage" value="1">页</sp>
+                            <a style="margin-left: 3px" class="num" onclick="page('goto')">跳转</a>
+                            <a style="margin-left: 3px" class="prev" onclick="page('gofirst')">首頁</a>
+                            <a style="margin-left: 3px" class="current" onclick="page('golast')">上一頁</a>
+                            <a style="margin-left: 3px" class="num" onclick="page('gonext')">下一頁</a>
+                            <a style="margin-left: 3px" class="num" onclick="page('goend')">尾頁</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        findAll();
+    })
+
+    //点赞数++
+    function numberAdd(number, id) {
+        number++;
+        let data = {
+            number,
+            id
+        };
+        let result = myAjax('/api/w/word/updateNumber', data, 'post');
+        if (result.code == 200) {
+            // console.log(result.code,'cnmm')
+            layer.msg('已点赞!', {icon: 1, time: 1000}, setTimeout(function () {  //使用  setTimeout（）方法设定定时xxxx毫秒
+                parent.location.reload();
+            }, 1000));
+        } else {
+            layer.msg('点赞失败!', {icon: 2, time: 1000}, setTimeout(function () {
+                location.reload();
+            }, 1000));
+        }
+    }
+
+    //收藏
+    function collectAdd(collect, id) {
+        collect = 2;
+        let data = {
+            collect,
+            id
+        };
+        let result = myAjax('/api/w/word/updateCollect', data, 'post');
+        if (result.code == 200) {
+            // console.log(result.code,'cnmm')
+            layer.msg('已收藏!', {icon: 1, time: 1000}, setTimeout(function () {  //使用  setTimeout（）方法设定定时xxxx毫秒
+                parent.location.reload();
+            }, 1000));
+        } else {
+            layer.msg('收藏失败!', {icon: 2, time: 1000}, setTimeout(function () {
+                location.reload();
+            }, 1000));
+        }
+    }
+
+    //取消收藏
+    function collectReduce(collect, id) {
+        collect = 1;
+        let data = {
+            collect,
+            id
+        };
+        let result = myAjax('/api/w/word/updateCollect', data, 'post');
+        if (result.code == 200) {
+            // console.log(result.code,'cnmm')
+            layer.msg('已取消收藏!', {icon: 1, time: 1000}, setTimeout(function () {  //使用  setTimeout（）方法设定定时xxxx毫秒
+                parent.location.reload();
+            }, 1000));
+        } else {
+            layer.msg('取消失败!', {icon: 2, time: 1000}, setTimeout(function () {
+                location.reload();
+            }, 1000));
+        }
+    }
+
+    function findAll() {
+        let data = {
+            id: $("#id").val(),
+            english: $("#english").val(),
+            chinese: $("#chinese").val(),
+            author: $("#author").val(),
+            commitTime: $("#commit-time").val(),
+            number: $("#number").val(),
+            pageSize: $("#pageSize").val(),
+            curPage: $("#curPage").val(),
+            collect: $("#collect").val()
+        };
+        let result = myAjax('/api/w/word/findCollectAll', data, 'get');
+        $("#totalPage").html(result.totalCount);
+        setData(result.result);// 赋值用
+    };
+
+    // 循环赋值开始
+    function setData(data) {
+        // console.log(data,'data')
+        let html = '';
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].collect == 1) {
+                data[i].collect = '' + '<button onclick="collectAdd(' + data[i].collect + ',' + data[i].id + ')" class="iconfont">&#xe7ce;</button>'
+            } else {
+                data[i].collect = '' + '<button style="background-color: rgb(236,56,69)" onclick="collectReduce(' + data[i].collect + ',' + data[i].id + ')" class="iconfont">&#xe7ce;</button>'
+            }
+            html += '<tr>\n' +
+                '     <td onclick="words(' + data[i].id + ')">' + data[i].id + '</td>\n' +
+                '     <td>' + data[i].english
+                + '</td>\n' +
+                '     <td>' + data[i].chinese + '</td>\n' +
+                '     <td>' + data[i].author + '</td>\n' +
+                '     <td>' + data[i].commitTime + '</td>\n' +
+                '     <td><button onclick="numberAdd(' + data[i].number + ',' + data[i].id + ')" class="iconfont">&#xe717;</button>' + data[i].number + '</td>\n' +
+                // '     <td><button onclick="collectAdd(' + data[i].collect + ',' + data[i].id + ')" class="iconfont">&#xe7ce;</button></td>\n' +
+                '     <td>' + data[i].collect + '</td>' +
+                '   </tr>'
+        }
+        $("#manageLoopList").html(html);
+    }
+
+    /*弹出窗口*/
+    function words(id) {
+        // 点到id
+        localStorage.setItem('wordId', id);//通过这个id找寻其他数据
+        console.log(id, 'wordId')
+    }
+
+</script>
+<script>
+    layui.use(['laydate', 'form'], function () {
+        var laydate = layui.laydate;
+        var form = layui.form;
+
+
+        // 监听全选
+        form.on('checkbox(checkall)', function (data) {
+
+            if (data.elem.checked) {
+                $('tbody input').prop('checked', true);
+            } else {
+                $('tbody input').prop('checked', false);
+            }
+            form.render('checkbox');
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#start' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#end' //指定元素
+        });
+
+
+    });
+
+    /*用户-停用*/
+    function member_stop(obj, id) {
+        layer.confirm('确认要停用吗？', function (index) {
+
+            if ($(obj).attr('title') == '启用') {
+
+                //发异步把用户状态进行更改
+                $(obj).attr('title', '停用')
+                $(obj).find('i').html('&#xe62f;');
+
+                $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
+                layer.msg('已停用!', {icon: 5, time: 1000});
+
+            } else {
+                $(obj).attr('title', '启用')
+                $(obj).find('i').html('&#xe601;');
+
+                $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
+                layer.msg('已启用!', {icon: 5, time: 1000});
+            }
+
+        });
+    }
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('确认要删除吗？', function (index) {
+            //发异步删除数据
+            $(obj).parents("tr").remove();
+            layer.msg('已删除!', {icon: 1, time: 1000});
+        });
+    }
+
+
+    function delAll(argument) {
+        var ids = [];
+
+        // 获取选中的id
+        $('tbody input').each(function (index, el) {
+            if ($(this).prop('checked')) {
+                ids.push($(this).val())
+            }
+        });
+
+        layer.confirm('确认要删除吗？' + ids.toString(), function (index) {
+            //捉到所有被选中的，发异步进行删除
+            layer.msg('删除成功', {icon: 1});
+            $(".layui-form-checked").not('.header').parents('tr').remove();
+        });
+    }
+</script>
+</html>

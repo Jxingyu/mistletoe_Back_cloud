@@ -29,8 +29,8 @@ public class SignScheduled {
     UserService userService;
 
 
-    @Scheduled(cron = "0 0 6 ? * 1,2,3,4,5")// 每天6点查询出今天要点到的队员，存入Redis做为今天要点到的队员表单
-//    @Scheduled(cron = "0 */4 * * * ?") //测试 每2分钟生成表
+        @Scheduled(cron = "0 0 6 ? * 1,2,3,4,5")// 每天6点查询出今天要点到的队员，存入Redis做为今天要点到的队员表单
+//    @Scheduled(cron = "*/30 * * * * ?")// 每隔30秒执行一次：
     public void creatSign() {
         List<Team> allTeam = teamService.findAllTeam();// 查询所有团队
         allTeam.stream().forEach(team -> {
@@ -49,8 +49,8 @@ public class SignScheduled {
         });
     }
 
-    @Scheduled(cron = "0 0 10 ? * 1,2,3,4,5")//每天早上6点 生成表后 到10点前 都可以点到, 最终10点去提交到数据库,并且删除当天redis里的点到记录
-    //    @Scheduled(cron = "0 */3 * * * ?")// 测试 每3分钟提交表到数据库
+        @Scheduled(cron = "0 0 10 ? * 1,2,3,4,5")//每天早上6点 生成表后 到10点前 都可以点到, 最终10点去提交到数据库,并且删除当天redis里的点到记录
+//    @Scheduled(cron = "0 */1 * * * ?")// 测试 每1分钟提交表到数据库
     public void submmit() {
         List<Sign> signList = new ArrayList<>();
         Set<String> signSet = redisService.patternKeys("RBAC_SYSTEM:SIGN:TODAY_TEAM");
@@ -59,10 +59,11 @@ public class SignScheduled {
                 List<Sign> list = (List<Sign>) redisService.get(sign);
                 // 漏点 或 人未到的情况 直接设为未点到(后续可找相关角色补签)
                 list.stream().forEach(lists -> {
-                    if (lists.getSign() == null || lists.getSign().equals("")) {
+                    if (lists.getSign() == null || lists.getSign().equals("") && lists.getSignTime() == null || lists.getSignTime().equals("")) {
                         lists.setSign("未点到");
-                    }if (lists.getSignTime() == null || lists.getSignTime().equals("")) {
-                        lists.setSign("1970-01-01 00:00:00");
+                    }
+                    if (lists.getSignTime() == null || lists.getSignTime().equals("")) {
+                        lists.setSignTime("1970-01-01 00:00:00");
                     }
                 });
                 signList.addAll(list);

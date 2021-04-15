@@ -1,6 +1,0 @@
-com\xy\permission\PermissionApplication.class
-com\xy\permission\controller\PermissionController.class
-com\xy\permission\mapper\RolePermissionRelationMapper.class
-com\xy\permission\service\impl\PermissionServiceImpl.class
-com\xy\permission\mapper\PermissionMapper.class
-com\xy\permission\service\PermissionService.class

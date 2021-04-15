@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.word.mapper.WordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.Word">
+        <id column="id" property="id" />
+        <result column="english" property="english" />
+        <result column="chinese" property="chinese" />
+        <result column="author" property="author" />
+        <result column="commit_time" property="commitTime" />
+        <result column="number" property="number" />
+        <result column="collect" property="collect" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, english, chinese, author, commitTime, number
+    </sql>
+
+    <select id="findWordList" resultMap="BaseResultMap" parameterType="com.xy.model.Word">
+        SELECT * FROM word WHERE 1=1
+         <if test="english != null and english != ''">
+          AND  english LIKE concat('%',#{english},'%')
+         </if>
+         <if test="chinese != null and chinese != ''">
+          AND  chinese LIKE concat('%',#{chinese},'%')
+         </if>
+         ORDER BY #{number} DESC
+         <if test="pageSize != null and pageSize !='' and curPage != null and curPage != ''">
+            <bind name="curPage" value="(curPage-1)*pageSize"/>
+             limit #{curPage},#{pageSize}
+         </if>
+    </select>
+
+    <select id="findTotalCount" resultType="int"  parameterType="com.xy.model.Word">
+          select count(*) from word
+    </select>
+
+    <update id="updateNumber" parameterType="com.xy.model.Word">
+           UPDATE word SET
+             <if test="number != null and number != ''">
+                 number= #{number}
+             </if>
+            WHERE id = #{id}
+    </update>
+
+    <update id="updateCollect" parameterType="com.xy.model.Word">
+            UPDATE word SET
+             <if test="collect != null and collect != ''">
+                 collect= #{collect}
+             </if>
+            WHERE id = #{id}
+    </update>
+
+    <insert id="wordAdd">
+             INSERT INTO word (english,chinese,author,commit_time,number,collect)
+            values(#{english},#{chinese},#{author},#{commitTime},#{number},#{collect})
+    </insert>
+
+    <select id="findCollectAll" resultMap="BaseResultMap">
+                    SELECT * FROM word WHERE collect=2
+         <if test="english != null and english != ''">
+          AND  english LIKE concat('%',#{english},'%')
+         </if>
+         <if test="chinese != null and chinese != ''">
+          AND  chinese LIKE concat('%',#{chinese},'%')
+         </if>
+         ORDER BY #{number} DESC
+         <if test="pageSize != null and pageSize !='' and curPage != null and curPage != ''">
+            <bind name="curPage" value="(curPage-1)*pageSize"/>
+             limit #{curPage},#{pageSize}
+         </if>
+    </select>
+
+</mapper>

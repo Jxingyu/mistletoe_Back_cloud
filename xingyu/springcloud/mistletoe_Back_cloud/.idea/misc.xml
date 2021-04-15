@@ -9,8 +9,10 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/captcha/pom.xml" />
         <option value="$PROJECT_DIR$/code/pom.xml" />
         <option value="$PROJECT_DIR$/role/pom.xml" />
+        <option value="$PROJECT_DIR$/sign/pom.xml" />
       </set>
     </option>
   </component>

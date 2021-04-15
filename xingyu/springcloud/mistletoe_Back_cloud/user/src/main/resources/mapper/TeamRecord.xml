@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.user.mapper.TeamRecordMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.TeamRecord">
+        <id column="id" property="id"/>
+        <result column="name" property="id"/>
+        <result column="numbers" property="username"/>
+        <result column="count" property="pastTeam"/>
+        <result column="captain" property="currentTeam"/>
+        <result column="assistant" property="changeDate"/>
+    </resultMap>
+
+    <select id="findTeamRecord" resultType="com.xy.model.TeamRecord">
+            select * from team_record  order by id desc limit 0,50;
+    </select>
+
+    <insert id="insertPastTeamRecord">
+            insert into team_record(user_id,username,past_team)
+                values(#{sUserId},(select username from  user where user.id = #{xUserId}),(select name from team where numbers = #{xNumbers}))
+    </insert>
+
+    <update id="updateCurrentTeamRecord">
+             update team_record
+            set
+                current_team = (select name from team where numbers = #{iNumbers}),
+                change_date = (date_format(now(),'%Y-%m-%d %H:%m:%s'))
+            where user_id = #{iUserId}
+    </update>
+
+
+</mapper>

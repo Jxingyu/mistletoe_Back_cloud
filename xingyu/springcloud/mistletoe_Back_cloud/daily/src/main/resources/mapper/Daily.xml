@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xy.daily.mapper.DailyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xy.model.Daily">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="daily_title" property="dailyTitle" />
+        <result column="coach" property="coach" />
+        <result column="assistant" property="assistant" />
+        <result column="daily_content" property="dailyContent" />
+        <result column="harvest" property="harvest" />
+        <result column="shortage" property="shortage" />
+        <result column="submit_date" property="submitDate" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <select id="selectDailyAll" resultType="com.xy.model.Daily" parameterType="java.lang.Integer">
+
+            SELECT * FROM daily WHERE user_id = #{userId}
+<!--            IN( SELECT id FROM user WHERE username = #{username})-->
+    </select>
+
+    <select id="selectDailyId" resultType="java.lang.Integer" parameterType="java.lang.String">
+            SELECT id FROM user WHERE username = #{username}
+    </select>
+
+    <select id="selectNumbersByUserId" resultType="java.lang.Integer">
+            SELECT numbers FROM user_team_relation WHERE user_id = #{userId}
+    </select>
+
+    <select id="selectDailyEditMes" resultMap="BaseResultMap"  parameterType="java.lang.Integer">
+            SELECT id,assistant,coach FROM team WHERE numbers  = #{numbers}
+    </select>
+
+    <insert id="insertDaily" parameterType="com.xy.model.Daily">
+            INSERT INTO daily(user_id,username,daily_title,coach,assistant,daily_content,harvest,shortage,submit_date,status)
+            VALUES (#{userId},#{username},#{dailyTitle},#{coach},#{assistant},#{dailyContent},#{harvest},#{shortage},#{submitDate},#{status})
+    </insert>
+
+    <insert id="saveDailyInRedis" parameterType="com.xy.model.Daily">
+            INSERT INTO daily(user_id,username,daily_title,coach,assistant,daily_content,harvest,shortage,submit_date,status)
+            VALUES (#{userId},#{username},#{dailyTitle},#{coach},#{assistant},#{dailyContent},#{harvest},#{shortage},#{submitDate},#{status})
+    </insert>
+
+    <select id="selectDailyById" resultType="com.xy.model.Daily">
+            SELECT * FROM daily WHERE id = #{id}
+    </select>
+
+    <update id="updateDraftDaily" parameterType="com.xy.model.Daily">
+            UPDATE daily SET
+            user_id = #{userId}
+            ,username = #{username}
+            ,daily_title = #{dailyTitle}
+            ,coach = #{coach}
+            ,assistant = #{assistant}
+            ,daily_content = #{dailyContent}
+            ,harvest = #{harvest}
+            ,shortage = #{shortage}
+            ,submit_date = #{submitDate}
+            ,status = #{status}
+            WHERE id = #{id}
+    </update>
+
+    <update id="updateDailyStatus">
+            UPDATE daily SET
+            <if test="status != null and status != ''">
+            status = #{status}
+            </if>
+            <where>
+            id = #{id}
+            </where>
+    </update>
+    <select id="ReviewDailyAll" resultType="com.xy.model.Daily" parameterType="java.lang.Integer">
+            SELECT * FROM daily
+    </select>
+
+
+</mapper>

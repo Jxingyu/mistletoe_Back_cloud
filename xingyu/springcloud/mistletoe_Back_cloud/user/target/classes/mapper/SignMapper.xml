@@ -54,6 +54,7 @@
              <bind name="curPage" value="(curPage-1)*pageSize"/>
              limit #{curPage},#{pageSize}
             </if>
+<!--            AND ORDER BY id DESC limit 0,60-->
     </select>
 
     <select id="selectTotalCount" resultType="int" parameterType="com.xy.model.Sign">

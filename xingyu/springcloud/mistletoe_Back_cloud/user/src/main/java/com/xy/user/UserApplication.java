@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 //@EnableDiscoveryClient
@@ -17,6 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
 //@RibbonClient(name = "permission",configuration = MayRule.class)
 @EnableFeignClients(basePackages = "com.xy.user.feign")
 @EnableHystrix
+@EnableScheduling //开启SpringTask的定时任务功能
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);
