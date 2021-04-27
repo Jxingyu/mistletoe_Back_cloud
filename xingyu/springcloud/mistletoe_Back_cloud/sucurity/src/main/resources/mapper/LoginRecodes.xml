@@ -14,7 +14,7 @@
     <select id="SelectAllLoginRecodes" resultType="com.xy.model.LoginRecodes" parameterType="com.xy.model.LoginRecodes">
             SELECT * FROM login_recodes WHERE  1 = 1
             <if test="userName != null and userName != ''">
-                username LIKE concat('%',#{userName},'%')
+                username LIKE concat('%', #{userName} ,'%')
             </if>
     </select>
 

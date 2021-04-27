@@ -11,6 +11,7 @@ spring:
   #      user:
   #        name: xingyu
   #        password: 8520
+
   datasource:
     #数据库地址
     url: jdbc:mysql://localhost:3306/mistletoe?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
@@ -20,25 +21,28 @@ spring:
     #数据密码
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: http://192.168.0.105:9200
 
 eureka:
   instance:
-    lease-renewal-interval-in-seconds: 10
+    lease-renewal-interval-in-seconds: 3
     #续约更新时间间隔
-    lease-expiration-duration-in-seconds: 10
+    lease-expiration-duration-in-seconds: 3
     #续约更新时间间隔
     hostname: localhost
     #指定主机地址
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
-    healthcheck:
-      enabled: true
     register-with-eureka: true
     #注册到Eureka的注册中心
     fetch-registry: true
     #获取注册实例列表
     service-url:
-      defaultZone:  http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka
       #配置注册中心地址
     registry-fetch-interval-seconds: 5
     # 设置服务消费者从注册中心拉取服务列表的间隔
@@ -60,6 +64,8 @@ jwt:
   tokenHeader: Authorization
   #  {Authorization: "bearer jghrwg5thfdsfsrr0asfdagsdf"}
 
+esHost: localhost
+esPort: 9200
   #打印sql
 logging:
   level:

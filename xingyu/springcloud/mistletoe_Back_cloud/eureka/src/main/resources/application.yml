@@ -11,7 +11,7 @@ eureka:
     register-with-eureka: false #指定是否要注册到注册中心（默认true）
   server:
     enable-self-preservation: false #是否开启保护模式（默认true）
-    eviction-interval-timer-in-ms: 3000 # 清理间隔（单位毫秒，默认是60*1000）
+    eviction-interval-timer-in-ms: 2000 # 清理间隔（单位毫秒，默认是60*1000）
 
 
 

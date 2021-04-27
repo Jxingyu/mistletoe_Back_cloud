@@ -1,10 +1,20 @@
 spring:
+  #SpringAdmin ⬇
+  boot:
+    admin:
+      client:
+        #配置admin-server地址
+        #url: http://localhost:9301
+        instance:
+          service-base-url:  http://localhost:9311
+  #SpringAdmin ⬆
+#Redis ⬇
   redis:
     host: localhost # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
     port: 6379 # Redis服务器连接端口
     password: # Redis服务器连接密码（默认为空）
-
+#Redis ⬆
   application:
     name: user-service
   main:
@@ -34,7 +44,8 @@ spring:
 #      reactive:
 #        socket-timeout: 16000
 
-
+server:
+  port: 8100 #运行端口号
 
 jwt:
   #定义我们的盐  密码
@@ -56,12 +67,22 @@ jwt:
 #    loginLog:
 #      name: LoginLogQueue
   #打印sql
+
+#SpringAdmin Spring boot actuator端点启用和暴露⬇
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+#SpringAdmin Spring boot actuator端点启用和暴露⬆
+
 logging:
     level:
       com.xy.user.mapper: debug
 
-server:
-  port: 8100 #运行端口号
 eureka:
   instance:
     hostname: localhost #指定主机地址

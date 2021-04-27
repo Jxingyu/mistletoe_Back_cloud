@@ -7,6 +7,7 @@ import com.xy.model.Permission;
 import com.xy.model.RolePermissionRelation;
 import com.xy.user.service.PermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ import java.util.Vector;
 @RestController
 @RequestMapping("/permission")
 public class PermissionController {
-//TODO 不准备把模块分那么细，将在一个（如user服务）服务内存放多个controller及相关的层级--角色列表--权限分配--编辑窗口权限查询
+    //TODO 不准备把模块分那么细，将在一个（如user服务）服务内存放多个controller及相关的层级--角色列表--权限分配--编辑窗口权限查询
     @Value("${server.port}")
     private String port;
     @Autowired

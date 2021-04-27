@@ -1,9 +1,15 @@
 spring:
   application:
     name: zuul-proxy   #服务名
-
+    #链路追踪
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1 #设置Sleuth的抽样收集概率 1=100% 0.5=50%
 server:
   port: 10000    # 端口
+  #设置链路追踪
 
 #注册中心相关配置
 eureka:

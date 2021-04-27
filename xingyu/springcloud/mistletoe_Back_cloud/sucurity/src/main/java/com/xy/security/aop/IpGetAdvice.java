@@ -3,8 +3,10 @@ package com.xy.security.aop;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xy.common.DateUtils;
 import com.xy.model.LoginRecodes;
+import com.xy.security.model.EsLoginInfo;
 import com.xy.security.model.User;
 import com.xy.security.mapper.LoginUserMapper;
+import com.xy.security.service.IESLoginInfoService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -14,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.net.InetAddress;
 import java.util.Arrays;
 import java.util.Collections;
@@ -31,6 +34,8 @@ import java.util.List;
 public class IpGetAdvice {
     @Autowired
     private LoginUserMapper loginUserMapper;
+    @Autowired
+    private IESLoginInfoService esLoginInfoService;
 
     private Logger logger = LoggerFactory.getLogger(IpGetAdvice.class);
 
@@ -72,7 +77,19 @@ public class IpGetAdvice {
             loginRecodes.setUserName(username1);
             String userName = loginRecodes.getUserName();
             String loginDate = DateUtils.getCurrentDay();
-            loginUserMapper.insertLoginRecords(userName,pcName,pcIp,loginDate);// 插入登录记录相关信息
+            loginUserMapper.insertLoginRecords(userName, pcName, pcIp, loginDate);// 插入登录记录相关信息 到数据库
+            EsLoginInfo esLoginInf = new EsLoginInfo();
+            esLoginInf.setUsername(userName);
+            esLoginInf.setLoginDate(loginDate);
+            esLoginInf.setLoginPc(pcName);
+            esLoginInf.setLoginIp(pcIp);
+
+            // 直接存入es
+            try {
+                esLoginInfoService.putEsLogin(esLoginInf);
+            } catch (IOException e) {
+                System.out.println("IOException aop");
+            }
         }
 
 //        userMapper.insertLoginRecords(map);

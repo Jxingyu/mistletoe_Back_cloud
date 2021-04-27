@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         ,"/login/checkAccessToUri", "/utr/select/user", "/utr/select/userByTeamId", "/utr/selectUtr", "/utr/insertUserTeam", "/utr/deleteUtrIdInUtr"
                         , "/utr/select/captain", "/utr/select/NowCaptain", "/utr/selectUcr", "/team/findTeamById"
                         , "/sign/findSignById", "/daily/selectDailyId", "/daily/selectDailyEditMesByUserId/**"
-                        , "/daily/selectDailyById/**", "/daily/updateDraftDaily", "/daily/updateDailyStatus/**","/LoginRecodes/SelectAll").permitAll()
+                        , "/daily/selectDailyById/**", "/daily/updateDraftDaily", "/daily/updateDailyStatus/**","/LoginRecodes/SelectAll","/LoginRecodes/SelectAll/**").permitAll()
                 .antMatchers(AUTH_WHITELIST).permitAll()
 //                .antMatchers("/**").permitAll() //都可以访问
                 // .antMatchers("/users/**").hasRole("ADMIN") //需要相应的角色才能访问(某些路径（接口）需要什么权限或者什么角色才可以访问)

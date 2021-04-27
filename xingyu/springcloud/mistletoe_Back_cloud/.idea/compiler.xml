@@ -11,6 +11,7 @@
         <module name="zuul" />
         <module name="code" />
         <module name="common" />
+        <module name="admin-server" />
         <module name="role" />
         <module name="word" />
         <module name="eureka" />

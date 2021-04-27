@@ -1,0 +1,21 @@
+#spring:
+#  cloud:
+#  #Config客户端配置
+#  config:
+#    #启用配置后缀名称
+#    profile: dev
+#    #分支名称
+#    label: main
+#    #配置中心服务端地址
+#    uri: http://localhost:8920
+#    #配置文件名称
+#    name: user
+#    #配置文件基于security加密
+#    username: jxy
+#    password: 8520
+##刷新配置
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: 'refresh'

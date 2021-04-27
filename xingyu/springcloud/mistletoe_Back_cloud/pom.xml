@@ -17,6 +17,7 @@
         <module>zuul</module>
         <module>daily</module>
         <module>word</module>
+        <module>admin-server</module>
     </modules>
 
     <!-- 将版本 设为变量 让下面调用-->
@@ -110,7 +111,9 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>1.3.2</version>
             </dependency>
+
         </dependencies>
+
     </dependencyManagement>
 
 
